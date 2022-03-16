@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Peter Ursem's Personal Website</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Peter Ursem">
+        <meta name="description" content="Peter Ursem's Personal Website. Here I post photos and projects I've made.">
+        <meta name="keywords" content="Staples, Canada, Cochrane, Calgary, Peter Ursem, Peter, Ursem, Photo, Photography, Programming, Software">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156705175-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-156705175-1');
+        </script>
+        <!-- End Analytics -->
+    </head>
+    <body>
+        <ul class="navbar">
+            <li class="navitem"><a href="/index.html"><img class="logo" src="https://ursem.cc/images/web/logo.png"></a></li>
+            <li class="navitem"><a class="isDoing">welcomes you to his homepage.</a></li>
+            <li id="burgericon">
+                <a href="javascript:void(0);" class="icon" onclick="menuButton()">
+                <svg id="burgericon" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')">
+                <path
+                      class="line top"
+                      d="m 70,33 h -40 c -6.5909,0 -7.763966,-4.501509 -7.763966,-7.511428 0,-4.721448 3.376452,-9.583771 13.876919,-9.583771 14.786182,0 11.409257,14.896182 9.596449,21.970818 -1.812808,7.074636 -15.709402,12.124381 -15.709402,12.124381" />
+                <path
+                      class="line middle"
+                      d="m 30,50 h 40" />
+                <path
+                      class="line bottom"
+                      d="m 70,67 h -40 c -6.5909,0 -7.763966,4.501509 -7.763966,7.511428 0,4.721448 3.376452,9.583771 13.876919,9.583771 14.786182,0 11.409257,-14.896182 9.596449,-21.970818 -1.812808,-7.074636 -15.709402,-12.124381 -15.709402,-12.124381" />
+                </svg>
+                </a>
+            </li>
+        </ul>
+        
+        <ul id="burgermenu">
+            <li><a id="burgeritem" href="contact.html">Contact</a></li>
+            <li><a id="burgeritem" href="resume.pdf">Resumé</a></li>
+        </ul>
+
+        <!--Modal-->
+        <div id="imgModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+
+        <img class="coverimg" src="/images/web/cover.jpg">
+
+        <a id="date"></a>
+        <a id="description"></a>
+
+        <section id="photos"></section>
+
+        <script src="/js/modal.js"></script>
+        <script src="/js/crm.js"></script>
+    </body>
+    <script>
+        //Burger Menu
+        function menuButton() {
+        var x = document.getElementById("burgermenu");
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "flex";
+            x.style.width = "100%";
+        }
+        }
+    </script>
+</html>
