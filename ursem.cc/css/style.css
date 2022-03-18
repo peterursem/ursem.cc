@@ -197,10 +197,8 @@ body {
   display: block;
 }
 
-#photos {
+#imgs {
     padding-top: 10vh;
-
-    line-height: 40px;
    
     -webkit-column-count: 4;
     -webkit-column-gap:   10px;
@@ -210,34 +208,28 @@ body {
     column-gap:           10px; 
 }
 
-#photos a img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-#photos img {
+#imgs img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
 @media screen and (max-width: 1200px) {
-  #photos {
+  #imgs {
   -moz-column-count:    3;
   -webkit-column-count: 3;
   column-count:         3;
   }
 }
 @media screen and (max-width: 1000px) {
-  #photos {
+  #imgs {
   -moz-column-count:    2;
   -webkit-column-count: 2;
   column-count:         2;
   }
 }
 @media screen and (max-width: 600px) {
-  #photos{
+  #imgs{
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1;

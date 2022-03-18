@@ -2,34 +2,53 @@
 //  V0.1 - March 2022
 //  Hello to anyone here!
 
-function printPage(tags) {
-  var db;
-  var photosHTML;
-
+async function printPage(type, filters) {
     //Load Image DB
-    fetch('http://127.0.0.1:5500/photos/DB.json')
-    .then(response => response.json().then(data => db = data));
+    fetch('/ursem.cc/images/DB.json')
+    .then(response => {
+      var imgMatches = [];
 
-    const filters = ["Me", "Colour"];
-
-    document.getElementById("photos").innerHTML = photosHTML;
+      response.json().then(result => {
+        imgMatches = result.images.filter(img => {
+          let filtered = [];
+          console.log(img);
+          filters.forEach(filter => {
+            filtered.push(img[type].includes(filter));
+            console.log(filter);
+          });
+          console.log(filtered);
+          let Return = filtered.every(bool => bool === true);
+          return Return;
+        });
+        
+        var imgSection = document.getElementById("imgs");
+        var imgHTML = [];
+        console.log(imgMatches);
+        imgMatches.forEach(img => {
+            imgHTML.push("<img src='" + img.url + "'>");
+            console.log(imgHTML);
+        });
+        imgSection.innerHTML = imgHTML.join(' ');
+      });
+    })
 }
 
 //MODAL OVERLAY
 
 var modal = document.getElementById("imgModal");
-var imgs = document.getElementsByClassName("img")
+var imgSpace = document.getElementsByClassName("img")
 var modalImg = document.getElementById("modalImg");
 
-for(var img of imgs)
-{
-    img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-    }
-}
-
-var span = document.getElementsByClassName("close")[0];
-span.onclick = function() { 
+function setModals(){
+  for(var img of imgs)m            
+  {
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+  }
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() { 
   modal.style.display = "none";
+}
 }
