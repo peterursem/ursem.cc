@@ -118,15 +118,6 @@ const fireworkRocketInitVelocity = 1.5;
             }
         }
 
-        var counter = document.getElementById("counter");
-        var launchcounter = localStorage.getItem("fireworks_launched")
-        if (launchcounter != null) count = parseInt(launchcounter);
-        else count = 0;
-
         document.addEventListener("click", function(){
-            if(count == NaN) count = 0;
-            newFireworkRocket(event.pageX, event.pageY+580);
-            count += 1;
-            localStorage.setItem("fireworks_launched", count);
-            counter.innerHTML = "You've set off " + count + " Fireworks!";
+            if(document.getElementById('fireworksEnabled').checked === true) newFireworkRocket(event.pageX, event.pageY+580);
         });

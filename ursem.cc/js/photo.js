@@ -2,51 +2,80 @@
 //  V0.1 - March 2022
 //  Hello to anyone here!
 
-async function printPage(type, filters) {
-    //Load Image DB
-    fetch('/ursem.cc/images/DB.json')
-    .then(response => {
-      var imgMatches = [];
+fetch('images/DB.json')
+.then(r => {
+  r.json()
+  .then(result => {
+    let tagHTML = [];
+    result.tags.forEach(tag => {let tagStr ='"' + tag + '"'; tagHTML.push("<a href='javascript:void(0);' class='tags "+ tag +"' onclick='setTag(" + tagStr + ")'>" + tag + "</a> ");});
+    document.getElementById("tagBar").innerHTML = tagHTML.join(' ');
+    printPage([]);
+  });
+});
 
-      response.json().then(result => {
-        imgMatches = result.images.filter(img => {
-          let filtered = [];
-          console.log(img);
-          filters.forEach(filter => {
-            filtered.push(img[type].includes(filter));
-            console.log(filter);
-          });
-          console.log(filtered);
-          let Return = filtered.every(bool => bool === true);
-          return Return;
+var tags = [];
+function setTag(tag) {
+  var colours = ['#cfc7fa', '#e2c6ee', '#efc8dd', '#d7e9db', '#ced9ed'];
+
+  index = tags.indexOf(tag);
+  var tagRef = document.getElementsByClassName(tag)[0];
+  if (index === -1) {
+    let tagColour = colours[Math.floor(Math.random()*colours.length)];
+    tagRef.classList.add('selected');
+    tagRef.style.setProperty('background-color', tagColour);
+    console.log(tags);
+    tags.push(tag);
+  }
+  else {
+    tagRef.classList.remove('selected');
+    tagRef.style.setProperty('background-color', '#202020');
+    console.log(tagRef);
+    tags.splice(index, 1);
+  } 
+  printPage(tags);
+}
+
+function printPage(filters) {
+  var imgSection = document.getElementById("imgs");
+  var imgMatches = [];
+  var imgHTML = [];
+  fetch('images/DB.json')
+  .then(response => {
+    response.json().then(result => {
+      imgMatches = result.images.filter(img => {
+        // Check that image matches all filters
+        let filtered = [];
+        filters.forEach(filter => {
+        filtered.push(img['tags'].includes(filter.toLowerCase()));
         });
-        
-        var imgSection = document.getElementById("imgs");
-        var imgHTML = [];
-        console.log(imgMatches);
-        imgMatches.forEach(img => {
-            imgHTML.push("<img src='" + img.url + "'>");
-            console.log(imgHTML);
-        });
-        imgSection.innerHTML = imgHTML.join(' ');
+        let Return = filtered.every(bool => bool === true);
+        return Return;
       });
-    })
+
+      imgMatches.forEach(img => {
+          imgHTML.push("<img class='img' src='" + img.url + "'>");
+      });
+      imgSection.innerHTML = imgHTML.join(' ');
+      setModals();
+    });
+  });
 }
 
 //MODAL OVERLAY
 
-var modal = document.getElementById("imgModal");
-var imgSpace = document.getElementsByClassName("img")
-var modalImg = document.getElementById("modalImg");
-
 function setModals(){
-  for(var img of imgs)m            
+  var modal = document.getElementById("imgModal");
+  var imgs = document.getElementsByClassName("img");
+  var modalImg = document.getElementById("modalImg");
+
+  for(var img of imgs)            
   {
-      img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-      }
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
   }
+
   var span = document.getElementsByClassName("close")[0];
   span.onclick = function() { 
   modal.style.display = "none";
