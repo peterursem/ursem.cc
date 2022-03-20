@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'dm_serif';
-    src: url(/ursem.cc/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format("truetype");
+    src: url(/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: 'greycliff';
-  src: url(/ursem.cc/fonts/Fontspring-DEMO-greycliffcf-heavy.otf) format("opentype");
+  src: url(/fonts/Fontspring-DEMO-greycliffcf-heavy.otf) format("opentype");
 }
 
 body {
@@ -14,6 +14,16 @@ body {
 }
 
 /* NAV BAR */
+
+#navbar {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  padding: 0 25px;
+  list-style-type: none;
+  justify-content: space-between;
+}
 
 .logo {
     height: 60px;
@@ -24,16 +34,6 @@ body {
 .topText {
   font-family: 'dm_serif';
   color: #bbb;
-}
-
-.navbar {
-  display: flex;
-  box-sizing: border-box;
-  width: 100%;
-  height: 60px;
-  padding: 0 25px;
-  list-style-type: none;
-  justify-content: space-between;
 }
 
 .navitem {
@@ -100,7 +100,7 @@ body {
 
 /*PHOTO PAGES*/
 
-.coverimg {
+#coverimg {
   width: 95vw;
   height: 80vh;
   margin: auto;
@@ -306,84 +306,3 @@ body {
     animation-duration : 1s;
     animation-iteration-count : infinite;
   }
-
-  /*
-.line {
-  fill:none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke:#bbb;
-  stroke-width:5.5;
-  stroke-linecap:round;
-}
-
-#burgericon{
-  display: block;
-  position: absolute;
-  right: 50px;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-#burgericon .top {
-  stroke-dasharray: 40 121;
-}
-#burgericon .bottom {
-  stroke-dasharray: 40 121;
-}
-#burgericon.active .top {
-  stroke-dashoffset: -102px;
-}
-#burgericon.active .bottom {
-  stroke-dashoffset: -102px;
-}#burgericon{
-  display: block;
-  position: absolute;
-  left: 85%;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-#burgericon .top {
-  stroke-dasharray: 40 121;
-}
-#burgericon .bottom {
-  stroke-dasharray: 40 121;
-}
-#burgericon.active .top {
-  stroke-dashoffset: -102px;
-}
-#burgericon.active .bottom {
-  stroke-dashoffset: -102px;
-}
-
-#burgermenu {
-  display: none;
-  justify-content: center;
-  list-style: none;
-  margin: 5px 0;
-  margin-block: 0;
-  margin-inline: 0;
-  padding-inline: 0;
-}
-
-#burgeritem{
-  display: list-item;
-  margin: 5px 5px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 0.5vh 15vw;
-  text-align: center;
-  font-family: 'dm_serif';
-  color: rgb(77, 77, 77);
-  background: beige;
-  border-radius: 10px;
-}
-*/
