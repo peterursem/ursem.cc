@@ -13,10 +13,15 @@ fetch('images/database.json')
   r.json()
   .then(result => {
     let tagHTML = [];
+    let imgHTML = [];
     result.tags.forEach(tag => {let tagStr ='"' + tag + '"'; tagHTML.push("<a href='javascript:void(0);' class='tags "+ tag +"' onclick='setTag(" + tagStr + ")'>" + tag + "</a> ");});
     document.getElementById("tagBar").innerHTML = tagHTML.join(' ');
     data = result;
-    printPage([]);
+
+    result.images.forEach(img => {
+      imgHTML.push("<img class='img' src='" + img.url + "'>");
+    });
+    imgSection.innerHTML = imgHTML.join(' ');
   });
 });
 
@@ -33,15 +38,14 @@ function setTag(tag) {
   else {
     tagRef.classList.remove('selected');
     tagRef.style.setProperty('background-color', '#202020');
-    console.log(tagRef);
     tags.splice(index, 1);
   } 
-  possibleTags =[];
+
+  possibleTags = [];
   printPage(tags);
 
   let removeTags = data.tags.filter(tag => !possibleTags.includes(tag));
   removeTags.forEach(tag => {
-    console.log('Removing Tag: ' + tag);
     let tagButton = document.getElementsByClassName(tag)[0];
     tagButton.style.display = 'none';
   });
@@ -53,7 +57,6 @@ function setTag(tag) {
 
 function printPage(filters, printHidden) {
   let imgMatches = [];
-  let imgHTML = [];
 
   imgMatches = data.images.filter(img => {
     // Check that image matches all filters
@@ -66,13 +69,19 @@ function printPage(filters, printHidden) {
     return Return;
   });
 
-  imgMatches.forEach(img => {
+  if(filters === []) return setModals();
+
+  document.querySelectorAll("#imgs img").forEach(loadedImg => {
+    loadedImg.style.display = "none";
+    let loadedURL = loadedImg.src.replace('http://127.0.0.1:5500/ursem.cc/', '');
+    imgMatches.forEach(img => {
       img.tags.forEach(tag => {
         if(!possibleTags.includes(tag)) possibleTags.push(tag);
-      })
-      imgHTML.push("<img class='img' src='" + img.url + "'>");
+      });
+      if(img.url === loadedURL) loadedImg.style.display = "block";
+    });
   });
-  imgSection.innerHTML = imgHTML.join(' ');
+
   setModals();
 }
 
