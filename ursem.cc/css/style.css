@@ -3,6 +3,11 @@
     src: url(/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: 'greycliff';
+  src: url(/fonts/Fontspring-DEMO-greycliffcf-heavy.otf) format("opentype");
+}
+
 body {
     background: #202020;
     cursor: grab;
@@ -10,131 +15,46 @@ body {
 
 /* NAV BAR */
 
-#notice {
-  display: block;
-  text-align: center;
-  background-color: orange;
-  padding: 10px;
-  margin-bottom: -10px;
-  margin-bottom: -5px;
-  font-size: 24px;
+#navbar {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  padding: 0 25px;
+  list-style-type: none;
+  justify-content: space-between;
 }
 
 .logo {
-    height: 6vh;
-}
-
-.isDoing {
-    padding-left: 10px;
-    font-family: 'dm_serif';
-    color: #BBB;
+    height: 60px;
     vertical-align: middle;
-    white-space: nowrap;
-    overflow: hidden;
+    padding-right: 12px;
 }
 
-.navbar {
-  padding-left: 0.5vw;
-  padding-right: 0.5vw;
-  list-style-type: none;
-  line-height: 7vh;
+.topText {
+  font-family: 'dm_serif';
+  color: #bbb;
 }
 
 .navitem {
-    display: inline;
-    float: left;
-    height: 7vh;
+  display: inline-block;
 }
 
-.line {
-  fill:none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke:#bbb;
-  stroke-width:5.5;
-  stroke-linecap:round;
+@media screen and (max-width: 600px) {
+  .topText{
+    font-size: 12px;
+  }
 }
-
-#burgericon{
-  display: block;
-  position: absolute;
-  right: 50px;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-#burgericon .top {
-  stroke-dasharray: 40 121;
-}
-#burgericon .bottom {
-  stroke-dasharray: 40 121;
-}
-#burgericon.active .top {
-  stroke-dashoffset: -102px;
-}
-#burgericon.active .bottom {
-  stroke-dashoffset: -102px;
-}#burgericon{
-  display: block;
-  position: absolute;
-  left: 85%;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 400ms;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-#burgericon .top {
-  stroke-dasharray: 40 121;
-}
-#burgericon .bottom {
-  stroke-dasharray: 40 121;
-}
-#burgericon.active .top {
-  stroke-dashoffset: -102px;
-}
-#burgericon.active .bottom {
-  stroke-dashoffset: -102px;
-}
-
-#burgermenu {
-  display: none;
-  justify-content: center;
-  list-style: none;
-  margin: 5px 0;
-  margin-block: 0;
-  margin-inline: 0;
-  padding-inline: 0;
-}
-
-#burgeritem{
-  display: list-item;
-  margin: 5px 5px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 0.5vh 15vw;
-  text-align: center;
-  font-family: 'dm_serif';
-  color: rgb(77, 77, 77);
-  background: beige;
-  border-radius: 10px;
-}
-
 /*INDEX*/
 
 #sitecover {
-  width: 98vw;
+  width: 100%;
   height: 75vh;
 }
 
 #sitecover td
 {
-  width: 48%;
+  width: 50%;
   text-align: center;
   overflow: hidden;
   background-size: cover;
@@ -146,6 +66,7 @@ body {
   font-family: 'dm_serif';
   color: #bbb;
   font-size: 36px;
+  padding-bottom: 100px;
 }
 
 #sitecover a
@@ -172,23 +93,14 @@ body {
   #sitecover p{
     font-size: 18px;
   }
-  .isDoing{
-    font-size: 12px;
-  }
   #sitecover {
     height: 60vh;
-  }
-  #burgericon{
-    display: block;
-  }
-  .navbutton {
-    display: none;
   }
 }
 
 /*PHOTO PAGES*/
 
-.coverimg {
+#coverimg {
   width: 95vw;
   height: 80vh;
   margin: auto;
@@ -197,56 +109,68 @@ body {
   display: block;
 }
 
-#photos {
-    padding-top: 10vh;
+#tagBar {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding-top: 9px;
+  padding-bottom: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: beige;
+  border-bottom: beige;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
 
-    line-height: 40px;
-   
-    -webkit-column-count: 4;
+.tags {
+  padding: 0 15px;
+  border-style: solid;
+  border-color: #BBB;
+  border-radius: 10px;
+  color: #bbb;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'greycliff';
+}
+
+.selected {
+  color: #202020;
+}
+
+#imgs {   
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px;
+    -webkit-column-count: 3;
     -webkit-column-gap:   10px;
-    -moz-column-count:    4;
+    -moz-column-count:    3;
     -moz-column-gap:      10px;
-    column-count:         4;
+    column-count:         3;
     column-gap:           10px; 
 }
 
-#photos a img {
+#imgs img {
+    display: block;
     width: 100%;
     height: auto;
-    border-radius: 5px;
-}
-
-#photos img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+    border-radius: 15px;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1200px) {
-  #photos {
-  -moz-column-count:    3;
-  -webkit-column-count: 3;
-  column-count:         3;
-  }
-}
-@media screen and (max-width: 1000px) {
-  #photos {
+  #imgs {
   -moz-column-count:    2;
   -webkit-column-count: 2;
   column-count:         2;
   }
 }
-@media screen and (max-width: 600px) {
-  #photos{
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #sitecover p{
-    font-size: 18px;
+@media screen and (max-width: 800px) {
+  #imgs {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
   }
 }
 
@@ -291,7 +215,6 @@ body {
     to {transform:scale(1)}
   }
   
-  /* The Close Button */
   .close {
     position: absolute;
     top: 15px;
@@ -309,7 +232,6 @@ body {
     cursor: pointer;
   }
   
-  /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 800px){
     .modal-content {
       width: 100%;
@@ -317,18 +239,12 @@ body {
   }
 
   /* CONTACT */
-
-  .tagline {
-    color: #B9B9B9;
-    text-align: center;
-    width: 100vw;
-    font-size: x-large;
-  }
-
+  
   #contact {
     width: 80vw;
     display: block;
     margin: auto;
+    margin-top: 15%;
   }
 
   /*FIREWORKS*/
@@ -361,6 +277,10 @@ body {
     60% {background-color: #efc8dd;}
     80% {background-color: #d7e9db;}
     100% {background-color: #ced9ed;}
+  }
+
+  #theSky {
+    position: absolute;
   }
 
   .fireworkRocket {
