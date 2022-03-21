@@ -2,7 +2,7 @@
 //  V0.1 - March 2022
 //  Hello to anyone here!
 
-fetch('images/DB.json')
+fetch('images/database.json')
 .then(r => {
   r.json()
   .then(result => {
@@ -35,7 +35,7 @@ function setTag(tag) {
   printPage(tags);
 }
 
-function printPage(filters) {
+function printPage(filters, printHidden) {
   var imgSection = document.getElementById("imgs");
   var imgMatches = [];
   var imgHTML = [];
@@ -44,9 +44,10 @@ function printPage(filters) {
     response.json().then(result => {
       imgMatches = result.images.filter(img => {
         // Check that image matches all filters
+        if (img.tags.includes('Hidden')) return printHidden;
         let filtered = [];
         filters.forEach(filter => {
-        filtered.push(img['tags'].includes(filter.toLowerCase()));
+        filtered.push(img['tags'].includes(filter));
         });
         let Return = filtered.every(bool => bool === true);
         return Return;
