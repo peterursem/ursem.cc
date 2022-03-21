@@ -39,7 +39,7 @@ function printPage(filters) {
   var imgSection = document.getElementById("imgs");
   var imgMatches = [];
   var imgHTML = [];
-  fetch('images/DB.json')
+  fetch('images/database.json')
   .then(response => {
     response.json().then(result => {
       imgMatches = result.images.filter(img => {
