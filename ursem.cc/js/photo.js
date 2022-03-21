@@ -73,7 +73,7 @@ function printPage(filters, printHidden) {
 
   document.querySelectorAll("#imgs img").forEach(loadedImg => {
     loadedImg.style.display = "none";
-    let loadedURL = loadedImg.src.replace('http://127.0.0.1:5500/ursem.cc/', '');
+    let loadedURL = loadedImg.src.replace(loadedImg.baseURI, '');
     imgMatches.forEach(img => {
       img.tags.forEach(tag => {
         if(!possibleTags.includes(tag)) possibleTags.push(tag);
