@@ -2,5 +2,7 @@
 # If you are here, and you are not a robot, please head to https://ursem.cc/
 
 User-agent: googlebot
-Disallow: /pages/
-Disallow: /images/web/logo.png
+Disallow: /photo.html
+Disallow: /21day.html
+Disallow: /resume.pdf
+Disallow: /404.html

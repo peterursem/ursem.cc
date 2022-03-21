@@ -8,8 +8,6 @@
         <meta name="keywords" content="Staples, Canada, Cochrane, Calgary, Peter Ursem, Peter, Ursem, Photo, Photography, Programming, Software">
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-
-        <!-- Google Search Result Generator-->
         <script type="application/ld+json">
         {
             "@context": "http://schema.org/",
@@ -18,7 +16,6 @@
             "logo": "https://ursem.cc/images/web/cover_square.jpeg"
         }
         </script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156705175-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -26,271 +23,39 @@
             gtag('js', new Date());
             gtag('config', 'UA-156705175-1');
         </script>
-        <!-- End Analytics -->
     </head>
     <body>
         <div id="theSky"></div>
-        <div id="notice"><a>Click to launch fireworks</a><br><a id="counter"></a></div>
-        <ul class="navbar">
-            <li class="navitem"><a href="/index.html"><img class="logo" src="https://ursem.cc/images/web/logo.png"></a></li>
-            <li class="navitem"><a class="isDoing">welcomes you to his homepage.</a></li>
-            <li id="burgericon">
-                <a href="javascript:void(0);" class="icon" onclick="menuButton()">
-                <svg id="burgericon" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')">
-                <path
-                      class="line top"
-                      d="m 70,33 h -40 c -6.5909,0 -7.763966,-4.501509 -7.763966,-7.511428 0,-4.721448 3.376452,-9.583771 13.876919,-9.583771 14.786182,0 11.409257,14.896182 9.596449,21.970818 -1.812808,7.074636 -15.709402,12.124381 -15.709402,12.124381" />
-                <path
-                      class="line middle"
-                      d="m 30,50 h 40" />
-                <path
-                      class="line bottom"
-                      d="m 70,67 h -40 c -6.5909,0 -7.763966,4.501509 -7.763966,7.511428 0,4.721448 3.376452,9.583771 13.876919,9.583771 14.786182,0 11.409257,-14.896182 9.596449,-21.970818 -1.812808,-7.074636 -15.709402,-12.124381 -15.709402,-12.124381" />
-                </svg>
-                </a>
-            </li>
+        <ul id="navbar">
+            <li class="navitem"><a href="/index.html"><img class="logo" src="images/web/logo.png"></a><a class="topText">Now with search!</a></li>
+            <li class="navitem"><a class="topText">Enable Fireworks? </a><input type="checkbox" id="fireworksEnabled"><br><br><a class="topText" style="font-size: 11px;">Website V2.2 - 20/03/22</a></li>
         </ul>
-        <ul id="burgermenu">
-            <li><a id="burgeritem" href="contact.html">Contact</a></li>
-            <li><a id="burgeritem" href="resume.pdf">Resumé</a></li>
-        </ul>
+
         <table id="sitecover">
             <tr>
                 <td>
                     <p>
                     Hi there! <br>
-                    My name's Peter, <wbr>and I'm a Tech Area Salesperson at Staples Canada. <wbr>In my free time I like to ride horses, <wbr>play games, program, and take photos. <br>Think we'd be a good fit?
+                    My name's Peter, <wbr>and I'm a Tech Area Salesperson at Staples Canada. <wbr>In my free time I've been making this website. Everything here was handwritten by me.
                     </p>
                     <a href="/contact.html">Contact Me</a>
-                    <br><b> or </b><br>
-                    <a href="/resume.pdf">Resumé</a>
                 </td>
                 <td style="
-                background-image: url(https://ursem.cc/images/web/cover.jpg);
+                background-image: url(images/web/cover.jpg);
                 background-size: cover; background-position: center;"></td>
             </tr>
         </table>
 
-        <section id="photos">
-            <a href="/pages/radium.html"><img src="images/radium/Radium-1.jpg"></a>
-            <a href="/pages/radium.html"><img src="images/radium/Radium-2.jpg"></a>
-            <a href="/pages/radium.html"><img src="images/radium/Radium-3.jpg"></a>
-            <a href="/pages/radium.html"><img src="images/radium/Radium-4.jpg"></a>
-            <a href="/pages/radium.html"><img src="images/radium/Radium-5.jpg"></a>
-            <a href="/pages/radium.html"><img src="images/radium/Radium-6.jpg"></a>
+        <div id="tagBar"></div>
+        <section id="imgs"></section>
 
-            <a href="/pages/backroads.html"><img src="images/backroads/cars-5.jpg"></a>
-            <a href="/pages/backroads.html"><img src="images/backroads/cars-14.jpg"></a>
+        <div id="imgModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
 
-            <a href="/pages/septlong.html"><img src="images/septlong/septlong-2.jpg"> </a>
-            <a href="/pages/septlong.html"><img src="images/septlong/septlong-3.jpg"> </a>
-          
-            <a href="/pages/riding20.html"><img src="images/riding20/riding20--7.jpg"></a>
-            <a href="/pages/riding20.html"><img src="images/riding20/riding20--11.jpg"></a>
-
-            <a href="/pages/inkpots.html"><img src="images/inkpots/inkpots-3.jpg"> </a>
-            <a href="/pages/inkpots.html"><img src="images/inkpots/inkpots-12.jpg"></a>
-            <a href="/pages/inkpots.html"><img src="images/inkpots/inkpots-19.jpg"></a>
-
-            <a href="/pages/glenbow.html"><img src="images/glenbow/glenbow-1.jpg"> </a>
-            <a href="/pages/glenbow.html"><img src="images/glenbow/glenbow-3.jpg"> </a>
-            <a href="/pages/glenbow.html"><img src="images/glenbow/glenbow-18.jpg"></a>
-            <a href="/pages/glenbow.html"><img src="images/glenbow/glenbow-19.jpg"></a>
-            
-            <a href="/pages/f100.html"><img src="images/f100-test/f100-2.jpg"> </a>
-            <a href="/pages/f100.html"><img src="images/f100-test/f100-3.jpg"> </a>
-            <a href="/pages/f100.html"><img src="images/f100-test/f100-6.jpg"> </a>
-
-            <a href="/pages/biking.html"><img src="images/biking_downtown/bike-1.jpg"></a>
-            <a href="/pages/biking.html"><img src="images/biking_downtown/bike-7.jpg"></a>
-
-            <a href="/pages/farm.html"><img src="images/farm/farm-3.jpg"></a>
-
-            <a href="/pages/tracks.html"><img src="images/tracks/tracks-7.jpg"></a>
-            <a href="/pages/tracks.html"><img src="images/tracks/tracks-14.jpg"></a>
-            <a href="/pages/tracks.html"><img src="images/tracks/tracks-15.jpg"></a>
-
-            <a href="/pages/disposables.html"><img src="/images/disposable/Disposable-7.jpg"></a>
-            <a href="/pages/disposables.html"><img src="/images/disposable/Disposable-10.jpg"></a>
-            <a href="/pages/disposables.html"><img src="/images/disposable/Disposable-20.jpg"></a>
-            <a href="/pages/disposables.html"><img src="/images/disposable/Disposable-25.jpg"></a>
-
-            <a href="/pages/abandoned.html"><img src="images/abandoned/abandoned-5.jpg"></a>
-
-            <a href="/pages/quarantine.html"><img src="images/quarantine/quarantine_1.jpg"></a>
-            <a href="/pages/quarantine.html"><img src="images/quarantine/quarantine_2.jpg"></a>
-            <a href="/pages/quarantine.html"><img src="images/quarantine/quarantine_4.jpg"></a>
-
-            <a href="/pages/ray.html"><img src="images/ray/ray_4.jpg"></a>
-            <a href="/pages/ray.html"><img src="images/ray/ray_5.jpg"></a>
-
-            <a href="/pages/photo10.html"><img src="images/photo10/older-9.jpg"></a>
-            <a href="/pages/photo10.html"><img src="images/photo10/older-5.jpg"></a>
-            <a href="/pages/photo10.html"><img src="images/photo10/older-1.jpg"></a>
-            <a href="/pages/photo10.html"><img src="images/photo10/older-11.jpg"></a>
-            <a href="/pages/photo10.html"><img src="images/photo10/older-7.jpg"></a>
-            <a href="/pages/photo10.html"><img src="images/photo10/older-3.jpg"></a>
-            <a href="/pages/photo10.html"><img src="images/photo10/older-12.jpg"></a>
-            <a href="/pages/photo10.html"><img src="images/photo10/older-8.jpg"></a>
-            <a href="/pages/photo10.html"><img src="images/photo10/older-4.jpg"></a>
-            <a href="/pages/photo10.html"><img src="images/photo10/older-2.jpg"></a>
-            <a href="/pages/photo10.html"><img src="images/photo10/older-10.jpg"></a>
-            <a href="/pages/photo10.html"><img src="images/photo10/older-6.jpg"></a>
-        </section>
+        <script src="js/main.js"></script>
+        <script src="js/firework.js"></script>
+        <script src="js/photo.js"></script>
     </body>
-
-    <script>
-
-        //Burger Menu
-        function menuButton() {
-        var x = document.getElementById("burgermenu");
-        if (x.style.display === "flex") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "flex";
-            x.style.width = "100%";
-        }
-        }
-
-        //Cursor
-
-        document.addEventListener('mousedown', function(){document.body.style.cursor = 'grabbing';});
-        document.addEventListener('mouseup', function(){document.body.style.cursor = 'grab'});
-
-        //Fireworks
-
-        const fireworkRocketInitVelocity = 1.5;
-        const fireworkRocketFlyTime = 500;
-
-        const fireworkInitVelocity = 0.5; 
-        const fireworkFlyTime = 2500;
-
-        const airResistance = 0.0005;
-        const gravity = 0.0005;
-        
-        const randomness = 0.3;
-
-        var sky = document.createElement('div');
-        document.body.insertBefore(sky, document.getElementById("theSky"));
-        
-        rockets = []
-        function newFireworkRocket(x,y){
-            var fireworkRocket = document.createElement("div");
-            fireworkRocket.setAttribute('class','fireworkRocket');
-            sky.appendChild(fireworkRocket);
-
-            fireworkRocket.time = fireworkRocketFlyTime;
-
-            fireworkRocket.velocity = [];
-            fireworkRocket.velocity.x = 0;
-            fireworkRocket.velocity.y = fireworkRocketInitVelocity;
-
-            fireworkRocket.position = [];
-            fireworkRocket.position.x = x;
-            fireworkRocket.position.y = y;
-            fireworkRocket.style.left = fireworkRocket.position.x + "px";
-            fireworkRocket.style.top = fireworkRocket.position.y + "px";
-
-            rockets.push(fireworkRocket);
-            return fireworkRocket;
-        }
-
-        fireworks = []
-        function newFirework(x,y,angle){
-            var firework = document.createElement("div");
-            firework.setAttribute('class','firework');
-            sky.appendChild(firework);
-
-            while(angle>360) angle-=360;
-            while(angle<0) angle+=360;
-
-            firework.time = fireworkFlyTime;
-
-            firework.velocity = [];
-            firework.velocity.x = fireworkInitVelocity * Math.sin(angle * Math.PI / 180) * (1 - Math.random() * randomness);
-            firework.velocity.y = fireworkInitVelocity * Math.cos(angle * Math.PI /180) * (1 - Math.random() * randomness);
-
-            firework.position = [];
-            firework.position.x = x;
-            firework.position.y = y;
-            firework.style.left = firework.position.x + "px";
-            firework.style.top = firework.position.y + "px";
-
-            fireworks.push(firework);
-            return firework;
-        }
-
-        function newFireworkStar(x,y)
-        {
-            var launchAngle = 0;
-            while(launchAngle < 360)
-            {
-                newFirework(x,y,launchAngle);
-                launchAngle += 10;
-            }
-        }
-
-        var id = setInterval(frame, 5);
-        var before = Date.now();
-        function frame() {
-            var now = Date.now();
-            var dTime = now - before;
-            before = now;
-
-            for(i in rockets){
-                var rocket = rockets[i];
-                rocket.time -= dTime;
-                if(rocket.time > 0){
-                    rocket.position.x += rocket.velocity.x * dTime;
-                    rocket.position.y -= rocket.velocity.y * dTime;
-                    rocket.style.left = rocket.position.x + "px";
-                    rocket.style.top = rocket.position.y + "px";
-
-                    rocket.velocity.x -= rocket.velocity.x * airResistance * dTime;
-                    rocket.velocity.y -= rocket.velocity.y * airResistance * dTime + gravity * dTime;
-                }
-                else{
-                    newFireworkStar(rocket.position.x, rocket.position.y);
-                    rocket.parentNode.removeChild(rocket);
-                    rockets.splice(i, 1);
-                }
-            }
-
-            for(i in fireworks){
-                var firework = fireworks[i];
-                firework.time -= dTime;
-                if(firework.time > 0){
-                    if(firework.position.x > window.innerWidth){
-                        firework.parentNode.removeChild(firework);
-                        fireworks.splice(i,1);
-                    }
-                    firework.position.x += firework.velocity.x * dTime;
-                    firework.position.y -= firework.velocity.y * dTime;
-                    firework.style.left = firework.position.x + "px";
-                    firework.style.top = firework.position.y + "px";
-
-                    firework.velocity.x -= firework.velocity.x * airResistance * dTime;
-                    firework.velocity.y -= firework.velocity.y * airResistance * dTime + gravity * dTime;
-                }
-                else{
-                    firework.parentNode.removeChild(firework);
-                    fireworks.splice(i,1);
-                }
-            }
-        }
-
-        var counter = document.getElementById("counter");
-        var launchcounter = localStorage.getItem("fireworks_launched")
-        if (launchcounter != null) count = parseInt(launchcounter);
-        else count = 0;
-
-        document.addEventListener("click", function(){
-            if(count == NaN) count = 0;
-            newFireworkRocket(event.pageX, event.pageY+580);
-            count += 1;
-            localStorage.setItem("fireworks_launched", count);
-            counter.innerHTML = "You've set off " + count + " Fireworks!";
-        });
-        
-    </script>
 </html>
