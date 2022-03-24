@@ -19,9 +19,11 @@ fetch('images/database.json')
     data = result;
 
     result.images.forEach(img => {
-      imgHTML.push("<img class='img' src='" + img.url + "'>");
+      let thisURL = img.url.replace("images", "thumbs");
+      imgHTML.push("<img class='img' src='" + thisURL + "'>");
     });
     imgSection.innerHTML = imgHTML.join(' ');
+    printPage([], false);
   });
 });
 
@@ -42,7 +44,7 @@ function setTag(tag) {
   } 
 
   possibleTags = [];
-  printPage(tags);
+  printPage(tags, false);
 
   let removeTags = data.tags.filter(tag => !possibleTags.includes(tag));
   removeTags.forEach(tag => {
@@ -97,7 +99,8 @@ function setModals(){
   {
     img.onclick = function(){
       modal.style.display = "block";
-      modalImg.src = this.src;
+      let fullURL = this.src.replace("thumbs", "images");
+      modalImg.src = fullURL;
     }
   }
 
