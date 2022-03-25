@@ -115,9 +115,10 @@ body {
 
 #tagBar {
   display: block;
+  position: sticky;
   width: 100%;
   white-space: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding-top: 9px;
   padding-bottom: 14px;
   margin-top: 20px;
