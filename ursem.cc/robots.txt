@@ -7,4 +7,7 @@ Disallow: /photo.html
 Disallow: /21day.html
 Disallow: /resume.pdf
 Disallow: /404.html
-Dosallow: /images/web
+
+Disallow: /thumbs
+Disallow: /images/web
+Disallow: /images/Opa_Opoe
