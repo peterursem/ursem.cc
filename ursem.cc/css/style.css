@@ -45,7 +45,7 @@ body {
     font-size: 12px;
   }
   .logo {
-    width: 100px;
+    width: 50px;
     height: auto;
   }
 }
@@ -104,6 +104,21 @@ body {
 
 /*PHOTO PAGES*/
 
+#message {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  background: rgb(206,217,237);
+background: linear-gradient(130deg, rgba(206,217,237,1) 0%, rgba(207,199,250,1) 75%, rgba(226,198,238,1) 100%);
+  border-radius: 10px;
+  font-family: "dm_serif";
+  font-size: 18px;
+}
+
 #coverimg {
   width: 95vw;
   height: 80vh;
@@ -115,9 +130,10 @@ body {
 
 #tagBar {
   display: block;
+  position: sticky;
   width: 100%;
   white-space: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding-top: 9px;
   padding-bottom: 14px;
   margin-top: 20px;
