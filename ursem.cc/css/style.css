@@ -113,7 +113,7 @@ body {
   padding-bottom: 15px;
   padding-left: 15px;
   background: rgb(206,217,237);
-  background: linear-gradient(130deg, rgba(206,217,237,1) 0%, rgba(207,199,250,1) 25%, rgba(226,198,238,1) 50%, rgba(239,200,221,1) 75%, rgba(215,233,219,1) 100%);
+background: linear-gradient(130deg, rgba(206,217,237,1) 0%, rgba(207,199,250,1) 75%, rgba(226,198,238,1) 100%);
   border-radius: 10px;
   font-family: "dm_serif";
   font-size: 18px;
