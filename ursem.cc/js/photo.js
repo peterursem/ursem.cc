@@ -24,7 +24,7 @@ function init() {
       });
 
       result.images.forEach(img => {
-        if (!img.tags.includes("Opa & Opoe")) {
+        if (!img.tags.includes("Opa en Opoe")) {
           let thisURL = img.url.replace("images", "thumbs");
           imgHTML.push("<img class='img' src='" + thisURL + "'>");
         }
@@ -43,11 +43,11 @@ init();
 //A TAG IS CLICKED
 var opaClicked = false;
 function setTag(tag) {
-  if (tag === "Opa & Opoe") {
+  if (tag === "Opa en Opoe") {
     if(opaClicked === false) {
       let imgHTML = [];
       imgMatches = data.images.filter(img => {
-        if (img.tags.includes("Opa & Opoe")) {
+        if (img.tags.includes("Opa en Opoe")) {
           let thisURL = img.url.replace("images", "thumbs");
           imgHTML.push("<img class='img opa' src='" + thisURL + "'>");
         }
