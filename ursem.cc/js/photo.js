@@ -7,31 +7,66 @@ var imgSection = document.getElementById("imgs");
 var data = {};
 var tags = [];
 var possibleTags = [];
+var hide = true;
 
-fetch('images/database.json')
-.then(r => {
-  r.json()
-  .then(result => {
-    let tagHTML = [];
-    let imgHTML = [];
-    result.tags.forEach(tag => {let tagStr ='"' + tag + '"'; tagHTML.push("<a href='javascript:void(0);' class='tags "+ tag +"' onclick='setTag(" + tagStr + ")'>" + tag + "</a> ");});
-    document.getElementById("tagBar").innerHTML = tagHTML.join(' ');
-    data = result;
+//INIT PAGE
+function init() {
+  fetch('images/database.json')
+  .then(r => {
+    r.json()
+    .then(result => {
+      let tagHTML = [];
+      let imgHTML = [];
 
-    result.images.forEach(img => {
-      let thisURL = img.url.replace("images", "thumbs");
-      imgHTML.push("<img class='img' src='" + thisURL + "'>");
+      result.tags.forEach(tag => {
+        let tagStr ='"' + tag + '"'; 
+        tagHTML.push("<a href='javascript:void(0);' class='tags "+ tag +"' onclick='setTag(" + tagStr + ")'>" + tag + "</a> ");
+      });
+
+      result.images.forEach(img => {
+        if (!img.tags.includes("Opa & Opoe")) {
+          let thisURL = img.url.replace("images", "thumbs");
+          imgHTML.push("<img class='img' src='" + thisURL + "'>");
+        }
+      });
+
+      data = result;
+      document.getElementById("tagBar").innerHTML = tagHTML.join(' ');
+      imgSection.innerHTML = imgHTML.join(' ');
+      printImgs([]);
+      printMsg(null);
     });
-    imgSection.innerHTML = imgHTML.join(' ');
-    printPage([], false);
   });
-});
+}
+init();
 
+//A TAG IS CLICKED
+var opaClicked = false;
 function setTag(tag) {
+  if (tag === "Opa & Opoe") {
+    if(opaClicked === false) {
+      let imgHTML = [];
+      imgMatches = data.images.filter(img => {
+        if (img.tags.includes("Opa & Opoe")) {
+          let thisURL = img.url.replace("images", "thumbs");
+          imgHTML.push("<img class='img opa' src='" + thisURL + "'>");
+        }
+      });
+      imgSection.innerHTML = imgHTML.join(' ');
+      opaClicked = true;
+    }
+    else {
+      init();
+      opaClicked = false;
+      tags = [];
+      return;
+    }
+  }
+
   let index = tags.indexOf(tag);
   var tagRef = document.getElementsByClassName(tag)[0];
 
-  if (index === -1) {
+  if (!tags.includes(tag)) {
     let tagColour = colours[Math.floor(Math.random()*colours.length)];
     tagRef.classList.add('selected');
     tagRef.style.setProperty('background-color', tagColour);
@@ -43,8 +78,8 @@ function setTag(tag) {
     tags.splice(index, 1);
   } 
 
-  possibleTags = [];
-  printPage(tags, false);
+  printImgs(tags);
+  printMsg(tag);
 
   let removeTags = data.tags.filter(tag => !possibleTags.includes(tag));
   removeTags.forEach(tag => {
@@ -53,16 +88,18 @@ function setTag(tag) {
   });
   possibleTags.forEach(tag => {
     let tagButton = document.getElementsByClassName(tag)[0];
-    tagButton.style.display = 'inline-block'
+    if(tagButton) tagButton.style.display = 'inline-block';
   })
 }
 
-function printPage(filters, printHidden) {
+//APPLY FILTERS
+function printImgs(filters) {
   let imgMatches = [];
+  possibleTags = [];
 
   imgMatches = data.images.filter(img => {
     // Check that image matches all filters
-    if (img.tags.includes('Hidden')) return printHidden;
+    if (img.tags.includes('Hidden')) return !hide;
     let filtered = [];
     filters.forEach(filter => {
       filtered.push(img['tags'].includes(filter));
@@ -71,12 +108,11 @@ function printPage(filters, printHidden) {
     return Return;
   });
 
-  if(filters === []) return setModals();
-
+//
   document.querySelectorAll("#imgs img").forEach(loadedImg => {
     loadedImg.style.display = "none";
-    let loadedURL = loadedImg.src.replace(loadedImg.baseURI, '');
-    imgMatches.forEach(img => {
+      let loadedURL = loadedImg.src.replace(loadedImg.baseURI, '');
+      imgMatches.forEach(img => {
       img.tags.forEach(tag => {
         if(!possibleTags.includes(tag)) possibleTags.push(tag);
       });
@@ -87,9 +123,21 @@ function printPage(filters, printHidden) {
   setModals();
 }
 
+function printMsg(tag) {
+  let msgRef = document.getElementById("message");
+  let msgData = data.messages[tag];
+  if(msgData) {
+    msgRef.innerHTML = msgData;
+    msgRef.style.display = 'block';
+  }
+  else {
+    msgRef.innerHTML = "";
+    msgRef.style.display = 'none';
+  }
+}
+
 
 //MODAL OVERLAY
-
 function setModals(){
   var modal = document.getElementById("imgModal");
   var imgs = document.getElementsByClassName("img");
@@ -106,6 +154,6 @@ function setModals(){
 
   var span = document.getElementsByClassName("close")[0];
   span.onclick = function() { 
-  modal.style.display = "none";
-}
+    modal.style.display = "none";
+  }
 }
