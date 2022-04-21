@@ -23,7 +23,7 @@ function init() {
         tagHTML.push("<a href='javascript:void(0);' class='tags "+ tag +"' onclick='setTag(" + tagStr + ")'>" + tag + "</a> ");
       });
 
-      result.images.forEach(img => {
+      result.images.reverse().forEach(img => {
         if (!img.tags.includes("Opa en Opoe")) {
           let thisURL = img.url.replace("images", "thumbs");
           imgHTML.push("<img class='img' src='" + thisURL + "'>");
