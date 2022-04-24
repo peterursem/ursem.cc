@@ -49,13 +49,14 @@ function setTag(tag) {
   if (tag === "Opa en Opoe") {
     if(opaClicked === false) {
       let imgHTML = [];
-      imgMatches = data.images.filter(img => {
+      imgMatches = data.images.reverse().filter(img => {
         if (img.tags.includes("Opa en Opoe")) {
           let thisURL = img.url.replace("images", "thumbs");
-          imgHTML.push("<img class='img opa' src='" + thisURL + "'>");
+          imgHTML.push("<li><img class='img opa' src='" + thisURL + "'></li>");
         }
       });
       imgSection.innerHTML = imgHTML.join(' ');
+      setModals();
       opaClicked = true;
     }
     else {
