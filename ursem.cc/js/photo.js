@@ -1,5 +1,6 @@
+/* Copyright 2020 - 2022 Peter Ursem, All Rights Reserved */
 //  Peter Ursem's Personal CRM
-//  V0.1 - March 2022
+//  V1.2 - April 22
 //  Hello to anyone here!
 
 const colours = ['#cfc7fa', '#e2c6ee', '#efc8dd', '#d7e9db', '#ced9ed'];
@@ -36,7 +37,7 @@ function init() {
       
       setModals();
       printImgs([]);
-      printMsg(null);
+      printMsg("Start");
     });
   });
 }

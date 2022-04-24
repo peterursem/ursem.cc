@@ -1,3 +1,5 @@
+/* Copyright 2020 - 2022 Peter Ursem, All Rights Reserved */
+
 const fireworkRocketInitVelocity = 1.5;
 const fireworkRocketFlyTime = 500;
 
