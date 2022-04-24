@@ -1,0 +1,133 @@
+/*Image Previews*/
+
+#coverimg {
+    width: 95vw;
+    height: 80vh;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+#imgs {   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 98%;
+    margin: auto;
+    padding: 0;
+    gap: 10px;
+}
+
+#imgs li {
+    list-style: none;
+    height: 50vh;
+    flex-grow: 2;
+    margin: 0;
+    overflow: hidden;
+}
+
+#imgs li::after {
+    flex-grow: 10;
+}
+
+#imgs li img {
+    border-radius: 15px;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    #imgs li {
+      height: 30vh;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    #imgs li {
+      height: 80vh;
+    }
+  }
+
+@media screen and (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    #imgs {
+    flex-direction: row;
+    }
+  
+    #imgs li {
+      height: auto;
+      width: 100%;
+    }
+  
+    #imgs img {
+      width: 100%;
+      max-height: 75vh;
+      min-width: 0;
+    }
+  }
+
+/*Image Enlargement*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 800px) {
+    .modal-content{
+      width: 75%;
+      height: auto;
+    }
+  }
+
+  .modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 800px){
+    .modal-content {
+      width: 100%;
+    }
+  }
