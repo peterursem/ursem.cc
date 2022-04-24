@@ -1,5 +1,6 @@
+/* Copyright 2020 - 2022 Peter Ursem, All Rights Reserved */
 //  Peter Ursem's Personal CRM
-//  V0.1 - March 2022
+//  V1.2 - April 22
 //  Hello to anyone here!
 
 const colours = ['#cfc7fa', '#e2c6ee', '#efc8dd', '#d7e9db', '#ced9ed'];
@@ -23,18 +24,20 @@ function init() {
         tagHTML.push("<a href='javascript:void(0);' class='tags "+ tag +"' onclick='setTag(" + tagStr + ")'>" + tag + "</a> ");
       });
 
-      result.images.forEach(img => {
+      result.images.reverse().forEach(img => {
         if (!img.tags.includes("Opa en Opoe")) {
           let thisURL = img.url.replace("images", "thumbs");
-          imgHTML.push("<img class='img' src='" + thisURL + "'>");
+          imgHTML.push("<li><img class='img' src='" + thisURL + "' loading='lazy'></li>");
         }
       });
 
       data = result;
       document.getElementById("tagBar").innerHTML = tagHTML.join(' ');
       imgSection.innerHTML = imgHTML.join(' ');
+      
+      setModals();
       printImgs([]);
-      printMsg(null);
+      printMsg("Start");
     });
   });
 }
@@ -46,13 +49,14 @@ function setTag(tag) {
   if (tag === "Opa en Opoe") {
     if(opaClicked === false) {
       let imgHTML = [];
-      imgMatches = data.images.filter(img => {
+      imgMatches = data.images.reverse().filter(img => {
         if (img.tags.includes("Opa en Opoe")) {
           let thisURL = img.url.replace("images", "thumbs");
-          imgHTML.push("<img class='img opa' src='" + thisURL + "'>");
+          imgHTML.push("<li><img class='img opa' src='" + thisURL + "'></li>");
         }
       });
       imgSection.innerHTML = imgHTML.join(' ');
+      setModals();
       opaClicked = true;
     }
     else {
@@ -108,19 +112,16 @@ function printImgs(filters) {
     return Return;
   });
 
-//
   document.querySelectorAll("#imgs img").forEach(loadedImg => {
-    loadedImg.style.display = "none";
+    loadedImg.parentElement.style.display = "none";
       let loadedURL = loadedImg.src.replace(loadedImg.baseURI, '');
       imgMatches.forEach(img => {
       img.tags.forEach(tag => {
         if(!possibleTags.includes(tag)) possibleTags.push(tag);
       });
-      if(img.url === loadedURL) loadedImg.style.display = "block";
+      if(img.url === loadedURL) loadedImg.parentElement.style.display = "block";
     });
   });
-
-  setModals();
 }
 
 function printMsg(tag) {
@@ -145,6 +146,10 @@ function setModals(){
 
   for(var img of imgs)            
   {
+    var orientation = ""
+    if(img.naturalWidth > img.naturalHeight) orientation = "Horizontal";
+    else orientation = "Vertical";
+    img.classList.add(orientation);
     img.onclick = function(){
       modal.style.display = "block";
       let fullURL = this.src.replace("thumbs", "images");
