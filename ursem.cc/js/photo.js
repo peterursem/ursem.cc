@@ -26,13 +26,15 @@ function init() {
       result.images.reverse().forEach(img => {
         if (!img.tags.includes("Opa en Opoe")) {
           let thisURL = img.url.replace("images", "thumbs");
-          imgHTML.push("<img class='img' src='" + thisURL + "'>");
+          imgHTML.push("<li><img class='img' src='" + thisURL + "' loading='lazy'></li>");
         }
       });
 
       data = result;
       document.getElementById("tagBar").innerHTML = tagHTML.join(' ');
       imgSection.innerHTML = imgHTML.join(' ');
+      
+      setModals();
       printImgs([]);
       printMsg(null);
     });
@@ -108,19 +110,16 @@ function printImgs(filters) {
     return Return;
   });
 
-//
   document.querySelectorAll("#imgs img").forEach(loadedImg => {
-    loadedImg.style.display = "none";
+    loadedImg.parentElement.style.display = "none";
       let loadedURL = loadedImg.src.replace(loadedImg.baseURI, '');
       imgMatches.forEach(img => {
       img.tags.forEach(tag => {
         if(!possibleTags.includes(tag)) possibleTags.push(tag);
       });
-      if(img.url === loadedURL) loadedImg.style.display = "block";
+      if(img.url === loadedURL) loadedImg.parentElement.style.display = "block";
     });
   });
-
-  setModals();
 }
 
 function printMsg(tag) {
@@ -145,6 +144,10 @@ function setModals(){
 
   for(var img of imgs)            
   {
+    var orientation = ""
+    if(img.naturalWidth > img.naturalHeight) orientation = "Horizontal";
+    else orientation = "Vertical";
+    img.classList.add(orientation);
     img.onclick = function(){
       modal.style.display = "block";
       let fullURL = this.src.replace("thumbs", "images");
