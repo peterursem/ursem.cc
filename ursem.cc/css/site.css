@@ -1,3 +1,5 @@
+/* Copyright 2020 - 2022 Peter Ursem, All Rights Reserved */
+
 @font-face {
     font-family: 'dm_serif';
     src: url(/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format("truetype");
@@ -37,7 +39,7 @@ body {
 }
 
 .navitem {
-  display: inline-block;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 600px) {
@@ -47,6 +49,15 @@ body {
   .logo {
     width: 50px;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #fireworksEnabled{
+    width: 10px;
+  }
+  .topText{
+    font-size: 8px;
   }
 }
 
