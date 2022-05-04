@@ -1,78 +1,426 @@
-<!DOCTYPE html>
-<!--Copyright 2020 - 2022 Peter Ursem, All Rights Reserved-->
+<!doctype html>
 <html lang="en">
-    <head>
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
-        <link rel="manifest" href="favi/site.webmanifest">
-        <link rel="shortcut icon" href="favi/favicon.ico">
-        <meta name="msapplication-TileColor" content="#00aba9">
-        <meta name="msapplication-config" content="favi/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-        
-        <!-- Metadata -->
-        <title>Peter Ursem's Personal Website</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Peter Ursem">
-        <meta name="description" content="Peter Ursem's Personal Website. Here I post photos and projects I've made.">
-        <meta name="keywords" content="Staples, Canada, Cochrane, Calgary, Peter Ursem, Peter, Ursem, Photo, Photography, Programming, Software">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-        <link rel="stylesheet" href="css/site.css">
-        <script type="application/ld+json">
-        {
-            "@context": "http://schema.org/",
-            "@type": "Organization",
-            "url": "https://ursem.cc",
-            "logo": "https://ursem.cc/images/web/cover_square.jpeg"
-        }
-        </script>
 
-        <!-- Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156705175-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-156705175-1');
-        </script>
-    </head>
-    <body>
-        <div id="theSky"></div>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156705175-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        <ul id="navbar">
-            <li class="navitem"><a href="/"><img class="logo" src="images/web/logo.png"></a><a class="topText">Sorted it out!</a></li>
-            <li class="navitem"><a class="topText">Enable Fireworks? </a><input type="checkbox" id="fireworksEnabled"></li>
-        </ul>
+  gtag('config', 'UA-156705175-1');
+</script>
 
-        <table id="sitecover">
-            <tr>
-                <td>
-                    <p>
-                    Hi there! <br>
-                    My name's Peter, <wbr>and I'm a Tech Area Salesperson at Staples Canada. <wbr>In my free time I've been making this website. Everything here was handwritten by me.
-                    </p>
-                    <a href="/contact.html">Contact Me</a>
-                </td>
-                <td style="
-                background-image: url(images/web/cover.jpg);
-                background-size: cover; background-position: center;"></td>
-            </tr>
-        </table>
+    <title>Peter Ursem</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Peter Ursem">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <div id="tagBar"></div>
-        <section id="message"></section>
-        <ul id="imgs"></ul>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,900|Source+Serif+Pro&display=swap" rel="stylesheet">
 
-        <div id="imgModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="modalImg">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/peter.css">
+
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    
+    <div class="site-wrap" id="home-section">
+
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+
+
+
+      <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-3">
+              <div class="site-logo">
+                <a href="index.html" class="font-weight-bold">PETER URSEM</a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <script src="js/main.js"></script>
-        <script src="js/firework.js"></script>
-        <script src="js/photo.js"></script>
-        <link rel="stylesheet" href="css/images.css">
-    </body>
+      </header>
+
+    
+    <div class="site-section-cover bgimg">
+      <div class="container">
+        <div class="row align-items-center text-center justify-content-center">
+          <div class="col-lg-10">
+            <h1 class="text-white mb-4">Yeah, I have a website</h1>
+            <p class="lead text-white">Make a line, ladies<br>
+            <a class="text-pink" href="https://www.instagram.com/peter.ursem/">follow the insta</a></p><br><br><br>
+            <p class="lead text-white">I accept ETH and BTC. wallet: peter.ursem.eth</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row bg-black">
+      <div class="column c4">
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-1.jpg"></a>
+
+        <a href="/backroads.html"><img class="imgs" src="images/backroads/cars-5.jpg"></a>
+
+        <a href="/riding20.html"><img class="imgs" src="images/riding20/riding20--7.jpg"></a>
+
+        <a href="/inkpots.html"><img class="imgs" src="images/inkpots/inkpots-19.jpg"> </a>
+        
+        <a href="/glenbow.html"><img class="imgs" src="images/glenbow/glenbow-1.jpg"> </a>
+
+        <a href="/f100.html"><img class="imgs" src="images/f100-test/f100-2.jpg"></a>
+
+        <a href="/biking.html"><img class="imgs" src="images/biking_downtown/bike-1.jpg"></a>
+        
+        <a href="/farm.html"><img class="imgs" src="images/farm/farm-3.jpg"></a>
+
+        <a href="/tracks.html"><img src="images/tracks/tracks-7.jpg"></a>
+
+        <a href="/disposables.html"><img src="/images/disposable/Disposable-7.jpg"></a>
+
+        <a href="/abandoned.html"><img src="images/abandoned/abandoned-5.jpg"></a>
+
+        <a href="/quarantine.html"><img src="images/quarantine/quarantine_1.jpg"></a>
+      </div>
+
+
+
+      <div class="column c4">
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-2.jpg"></a>
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-3.jpg"></a>
+
+        <a href="/backroads.html"><img class="imgs" src="images/backroads/cars-14.jpg"></a>
+
+        <a href="/riding20.html"><img class="imgs" src="images/riding20/riding20--11.jpg"></a>
+
+        <a href="/glenbow.html"><img class="imgs" src="images/glenbow/glenbow-3.jpg"> </a>
+
+        <a href="/tracks.html"><img src="images/tracks/tracks-14.jpg"></a>
+
+        <a href="/disposables.html"><img src="/images/disposable/Disposable-10.jpg"></a>
+
+        <a href="/abandoned.html"><img src="images/abandoned/abandoned-8.jpg"></a>
+
+        <a href="/quarantine.html"><img src="images/quarantine/quarantine_2.jpg"></a>
+
+        <a href="/photo10.html"><img src="images/photo10/older-12.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-8.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-4.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-9.jpg"></a>
+      </div>
+
+
+      
+      <div class="column c4">
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-4.jpg"></a>
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-5.jpg"></a>
+
+        <a href="/septlong.html"><img class="imgs" src="images/septlong/septlong-3.jpg"> </a>
+
+        <a href="/inkpots.html"><img class="imgs" src="images/inkpots/inkpots-3.jpg"> </a>
+
+        <a href="/glenbow.html"><img class="imgs" src="images/glenbow/glenbow-18.jpg"> </a>
+
+        <a href="/biking.html"><img class="imgs" src="images/biking_downtown/bike-7.jpg"></a>
+
+        <a href="/tracks.html"><img src="images/tracks/tracks-15.jpg"></a>
+
+        <a href="/disposables.html"><img src="/images/disposable/Disposable-20.jpg"></a>
+
+        <a href="/quarantine.html"><img src="images/quarantine/quarantine_4.jpg"></a>
+
+        <a href="/ray1.html"><img src="images/ray/ray_4.jpg"></a>
+
+        <a href="/photo10.html"><img src="images/photo10/older-11.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-7.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-3.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-5.jpg"></a>
+      </div>
+
+
+
+      <div class="column c4">
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-6.jpg"></a>
+
+        <a href="/septlong.html"><img class="imgs" src="images/septlong/septlong-2.jpg"> </a>
+
+        <a href="/inkpots.html"><img class="imgs" src="images/inkpots/inkpots-12.jpg"> </a>
+        
+        <a href="/glenbow.html"><img class="imgs" src="images/glenbow/glenbow-19.jpg"> </a>
+
+        <a href="/disposables.html"><img src="/images/disposable/Disposable-25.jpg"></a>
+          
+        <a href="/quarantine.html"><img src="images/quarantine/quarantine_5.jpg"></a>
+
+        <a href="/ray1.html"><img src="images/ray/ray_5.jpg"></a>
+
+        <a href="/photo10.html"><img src="images/photo10/older-10.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-6.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-2.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-1.jpg"></a>
+      </div>
+
+      
+      <div class="column c2">
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-1.jpg"></a>
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-2.jpg"></a>
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-6.jpg"></a>
+
+        <a href="/backroads.html"><img class="imgs" src="images/backroads/cars-5.jpg"></a>
+
+        <a href="/septlong.html"><img class="imgs" src="images/septlong/septlong-3.jpg"> </a>
+
+        <a href="/riding20.html"><img class="imgs" src="images/riding20/riding20--7.jpg"></a>
+
+        <a href="/inkpots.html"><img class="imgs" src="images/inkpots/inkpots-3.jpg"> </a>
+        <a href="/inkpots.html"><img class="imgs" src="images/inkpots/inkpots-19.jpg"> </a>
+
+        <a href="/glenbow.html"><img class="imgs" src="images/glenbow/glenbow-1.jpg"> </a>
+        <a href="/glenbow.html"><img class="imgs" src="images/glenbow/glenbow-18.jpg"> </a>
+
+        <a href="/f100.html"><img class="imgs" src="images/f100-test/f100-2.jpg"></a>
+        <a href="/f100.html"><img class="imgs" src="images/f100-test/f100-6.jpg"></a>
+        <a href="/f100.html"><img class="imgs" src="images/f100-test/f100-3.jpg"> </a>
+
+        <a href="/biking.html"><img class="imgs" src="images/biking_downtown/bike-1.jpg"></a>
+
+        <a href="/tracks.html"><img src="images/tracks/tracks-7.jpg"></a>
+        <a href="/tracks.html"><img src="images/tracks/tracks-15.jpg"></a>
+
+        <a href="/disposables.html"><img src="/images/disposable/Disposable-7.jpg"></a>
+        <a href="/disposables.html"><img src="/images/disposable/Disposable-20.jpg"></a>
+
+        <a href="/abandoned.html"><img src="images/abandoned/abandoned-5.jpg"></a>
+
+        <a href="/quarantine.html"><img src="images/quarantine/quarantine_1.jpg"></a>
+        <a href="/quarantine.html"><img src="images/quarantine/quarantine_4.jpg"></a>
+
+        <a href="/ray1.html"><img src="images/ray/ray_4.jpg"></a>
+
+        <a href="/photo10.html"><img src="images/photo10/older-9.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-5.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-1.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-11.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-7.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-3.jpg"></a>
+      </div>
+
+
+
+      <div class="column c2">
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-3.jpg"></a>
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-4.jpg"></a>
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-5.jpg"></a>
+
+        <a href="/backroads.html"><img class="imgs" src="images/backroads/cars-14.jpg"></a>
+
+        <a href="/septlong.html"><img class="imgs" src="images/septlong/septlong-2.jpg"> </a>
+
+        <a href="/riding20.html"><img class="imgs" src="images/riding20/riding20--11.jpg"></a>
+            
+        <a href="/inkpots.html"><img class="imgs" src="images/inkpots/inkpots-12.jpg"> </a>
+
+        <a href="/glenbow.html"><img class="imgs" src="images/glenbow/glenbow-3.jpg"> </a>
+        <a href="/glenbow.html"><img class="imgs" src="images/glenbow/glenbow-19.jpg"> </a>
+
+        <a href="/biking.html"><img class="imgs" src="images/biking_downtown/bike-7.jpg"></a>
+
+        <a href="/farm.html"><img class="imgs" src="images/farm/farm-3.jpg"></a>
+
+        <a href="/tracks.html"><img src="images/tracks/tracks-14.jpg"></a>
+
+        <a href="/disposables.html"><img src="/images/disposable/Disposable-10.jpg"></a>
+        <a href="/disposables.html"><img src="/images/disposable/Disposable-25.jpg"></a>
+
+        <a href="/abandoned.html"><img src="images/abandoned/abandoned-8.jpg"></a>
+
+        <a href="/quarantine.html"><img src="images/quarantine/quarantine_2.jpg"></a>
+        <a href="/quarantine.html"><img src="images/quarantine/quarantine_5.jpg"></a>
+
+        <a href="/ray1.html"><img src="images/ray/ray_5.jpg"></a>
+
+        <a href="/photo10.html"><img src="images/photo10/older-12.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-8.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-4.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-2.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-10.jpg"></a>
+        <a href="/photo10.html"><img src="images/photo10/older-6.jpg"></a>
+      </div>
+
+
+      <div class="column c1">
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-1.jpg"></a>
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-2.jpg"></a>
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-3.jpg"></a>
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-4.jpg"></a>
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-5.jpg"></a>
+        <a href="/radium.html"><img class="imgs" src="images/radium/Radium-6.jpg"></a>
+
+          <a href="/backroads.html"><img class="imgs" src="images/backroads/cars-5.jpg"></a>
+          <a href="/backroads.html"><img class="imgs" src="images/backroads/cars-14.jpg"></a>
+
+          <a href="/septlong.html"><img class="imgs" src="images/septlong/septlong-2.jpg"> </a>
+          <a href="/septlong.html"><img class="imgs" src="images/septlong/septlong-3.jpg"> </a>
+          
+          <a href="/riding20.html"><img class="imgs" src="images/riding20/riding20--7.jpg"></a>
+          <a href="/riding20.html"><img class="imgs" src="images/riding20/riding20--11.jpg"></a>
+
+          <a href="/inkpots.html"><img class="imgs" src="images/inkpots/inkpots-3.jpg"> </a>
+          <a href="/inkpots.html"><img class="imgs" src="images/inkpots/inkpots-12.jpg"></a>
+          <a href="/inkpots.html"><img class="imgs" src="images/inkpots/inkpots-19.jpg"></a>
+
+          <a href="/glenbow.html"><img class="imgs" src="images/glenbow/glenbow-1.jpg"> </a>
+          <a href="/glenbow.html"><img class="imgs" src="images/glenbow/glenbow-3.jpg"> </a>
+          <a href="/glenbow.html"><img class="imgs" src="images/glenbow/glenbow-18.jpg"></a>
+          <a href="/glenbow.html"><img class="imgs" src="images/glenbow/glenbow-19.jpg"></a>
+
+          <a href="/f100.html"><img class="imgs" src="images/f100-test/f100-2.jpg"> </a>
+          <a href="/f100.html"><img class="imgs" src="images/f100-test/f100-3.jpg"> </a>
+          <a href="/f100.html"><img class="imgs" src="images/f100-test/f100-6.jpg"> </a>
+
+          <a href="/biking.html"><img class="imgs" src="images/biking_downtown/bike-1.jpg"></a>
+          <a href="/biking.html"><img class="imgs" src="images/biking_downtown/bike-7.jpg"></a>
+
+          <a href="/farm.html"><img class="imgs" src="images/farm/farm-3.jpg"></a>
+
+          <a href="/tracks.html"><img src="images/tracks/tracks-7.jpg"></a>
+          <a href="/tracks.html"><img src="images/tracks/tracks-14.jpg"></a>
+          <a href="/tracks.html"><img src="images/tracks/tracks-15.jpg"></a>
+
+          <a href="/disposables.html"><img src="/images/disposable/Disposable-7.jpg"></a>
+          <a href="/disposables.html"><img src="/images/disposable/Disposable-10.jpg"></a>
+          <a href="/disposables.html"><img src="/images/disposable/Disposable-20.jpg"></a>
+          <a href="/disposables.html"><img src="/images/disposable/Disposable-25.jpg"></a>
+
+          <a href="/abandoned.html"><img src="images/abandoned/abandoned-5.jpg"></a>
+          <a href="/abandoned.html"><img src="images/abandoned/abandoned-9.jpg"></a>
+
+          <a href="/quarantine.html"><img src="images/quarantine/quarantine_1.jpg"></a>
+          <a href="/quarantine.html"><img src="images/quarantine/quarantine_2.jpg"></a>
+          <a href="/quarantine.html"><img src="images/quarantine/quarantine_4.jpg"></a>
+
+          <a href="/ray1.html"><img src="images/ray/ray_4.jpg"></a>
+          <a href="/ray1.html"><img src="images/ray/ray_5.jpg"></a>
+
+          <a href="/photo10.html"><img src="images/photo10/older-9.jpg"></a>
+          <a href="/photo10.html"><img src="images/photo10/older-5.jpg"></a>
+          <a href="/photo10.html"><img src="images/photo10/older-1.jpg"></a>
+          <a href="/photo10.html"><img src="images/photo10/older-11.jpg"></a>
+          <a href="/photo10.html"><img src="images/photo10/older-7.jpg"></a>
+          <a href="/photo10.html"><img src="images/photo10/older-3.jpg"></a>
+          <a href="/photo10.html"><img src="images/photo10/older-12.jpg"></a>
+          <a href="/photo10.html"><img src="images/photo10/older-8.jpg"></a>
+          <a href="/photo10.html"><img src="images/photo10/older-4.jpg"></a>
+          <a href="/photo10.html"><img src="images/photo10/older-2.jpg"></a>
+          <a href="/photo10.html"><img src="images/photo10/older-10.jpg"></a>
+          <a href="/photo10.html"><img src="images/photo10/older-6.jpg"></a>
+      </div>
+    </div>
+    
+    <div class="footer site-section bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="site-logo-footer">
+              <a href="index.html">PETER URSEM</a>
+            </div> 
+          </div>
+          <div class="col-md-8 ml-auto">
+            <div class="row">
+              <div class="col-md-4">
+                <ul class="list-unstyled links">
+                  <li><a href="#" class="text-white">Home</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section bg-black">
+      <div class="container">
+        <div class="row mb-4 text-center">
+          <div class="col">
+            <a href="https://www.facebook.com/peter.ursem.1"><span class="m-2 icon-facebook"></span></a>
+            <a href="https://www.linkedin.com/in/peter-ursem-60b2071a7/"><span class="m-2 icon-linkedin"></span></a>
+            <a href="https://www.instagram.com/peter.ursem/"><span class="m-2 icon-instagram"></span></a>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-md-7 text-center">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/aos.js"></script>
+  
+
+    <script src="js/typed.js"></script>
+            <script>
+            var typed = new Typed('.typed-words', {
+            strings: ["Business"," Startups"," Organization", " Company"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 4000,
+            startDelay: 1000,
+            loop: true,
+            showCursor: true
+            });
+            </script>
+
+
+    <script src="js/main.js"></script>
+
+  </body>
+
 </html>
+
