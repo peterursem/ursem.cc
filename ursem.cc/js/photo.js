@@ -25,7 +25,7 @@ function init() {
       });
 
       result.images.reverse().forEach(img => {
-        if (!img.tags.includes("Opa en Opoe")) {
+        if (img.tags.includes("Index")) {
           let thisURL = img.url.replace("images", "thumbs");
           imgHTML.push("<li><img class='img' src='" + thisURL + "' loading='lazy'></li>");
         }
