@@ -1,0 +1,86 @@
+:root{
+    --sky: rgb(220, 219, 204);
+    --ocean: cornflowerblue;
+    --sun: #e5b23b;
+}
+
+body{
+    width: 100%;
+    overflow: hidden;
+}
+
+#bg {
+    background-color: var(--ocean);
+    height:40vh;
+    width: 100%;
+    left: 0;
+    top:60vh;
+    position: absolute;
+    z-index: 0;
+}
+
+#canvas {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#sun {
+  z-index: 0;
+  
+  width: 60px;
+  height: 60px;
+  
+  position: absolute;
+  overflow: hidden;
+  border-radius: 100%;
+  border-color: black;
+  
+  background: var(--sun);
+  
+  left: calc(50vw - 30px);
+  top: 50px;
+}
+
+@keyframes flying {
+    0% {transform: translate(0, 0);}
+    10% {transform: translate(-10vw, 10px);}
+    20% {transform: translate(-20vw, 20px);}
+    30% {transform: translate(-30vw, 30px);}
+    40% {transform: translate(-41vw, 0);}
+    50% {transform: translate(-51vw, 10px);}
+    60% {transform: translate(-61vw, 0);}
+    70% {transform: translate(-71vw, 40px);}
+    80% {transform: translate(-82vw, 0);}
+    90% {transform: translate(-92vw, 30px);}
+    100% {transform: translate(-102vw, 0);}
+}
+
+.bird{
+    position: absolute;
+    z-index: 2;
+}
+
+#staticBird{
+    position: absolute;
+    top: calc(60vh - 180px);
+    left: 102vw;
+    z-index: 2;
+    animation: flying 10s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#island {
+    position: absolute;
+    display: inline-block;
+    top: calc(60vh - 100px);
+    left: calc(50vw - 201.75px);
+    z-index: 2;
+}
+
