@@ -39,7 +39,7 @@ function drawSky(hour) {
         [["9da671", "0%"],  ["265889", "50%"],  ["1e528e", "100%"]],
         [["e9ce5d", "0%"],  ["728a7c", "50%"],  ["1e528e", "100%"]],
         [["b26339", "0%"],  ["e1c45e", "30%"],  ["576e71", "70%"],  ["154277", "100%"]],
-        [["B7490F", "0%"],  ["C5752D", "40%"],  ["4F4F47", "70%"]  ,["163C52", "100%"]],
+        [["B7490F", "0%"],  ["C5752D", "40%"],  ["4F4F47", "70%"],  ["163C52", "100%"]],
         [["8A3B12", "0%"],  ["071B26", "70%"],  ["071B26", "100%"]],
         [["2F1107", "0%"],  ["59230B", "20%"],  ["010A10", "70%"]],
         [["4B1D06", "0%"],  ["090401", "50%"]],
@@ -47,9 +47,9 @@ function drawSky(hour) {
     ];
     
     let now = new Date();
-    if(!hour){
-    let hour = now.getHours();
-    hour += now.getMinutes() / 60;
+    if(hour == undefined){
+        var hour = now.getHours();
+        hour += now.getMinutes() / 60;
     }
     let lat = Math.cos((5 * (hour - 2)) / (6 * Math.PI)) * (window.innerHeight * 0.4) + (window.innerHeight * 0.4) + 30;
     let lon = (hour / 24) * window.innerWidth - 30;
@@ -59,7 +59,7 @@ function drawSky(hour) {
     sun.style.top =  lat + 'px';
 
     let gradient = "radial-gradient(at " + lon + "px " + lat + "px";
-    skies[hour - 1].forEach(gradSpec => gradient += ", #" + gradSpec[0] + " " + gradSpec[1]);
+    skies[Math.round(hour - 1)].forEach(gradSpec => gradient += ", #" + gradSpec[0] + " " + gradSpec[1]);
 
     let canvas = document.getElementById("canvas");
 
