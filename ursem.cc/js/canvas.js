@@ -2,7 +2,9 @@ let startTime = Date.now();
 let flock = [];
 let totalBirds = 0;
 
-let timer = setInterval(draw(), 20);
+let timer = setInterval(function(){
+    draw();
+}, 20);
 
 function draw() {
     flock.forEach(bird => bird.draw());
@@ -45,9 +47,10 @@ function drawSky(hour) {
     ];
     
     let now = new Date();
-    //let hour = now.getHours();
-    //hour += now.getMinutes() / 60;
-
+    if(!hour){
+    let hour = now.getHours();
+    hour += now.getMinutes() / 60;
+    }
     let lat = Math.cos((5 * (hour - 2)) / (6 * Math.PI)) * (window.innerHeight * 0.4) + (window.innerHeight * 0.4) + 30;
     let lon = (hour / 24) * window.innerWidth - 30;
 
@@ -130,4 +133,4 @@ class Bird {
     }
 }
 
-//drawSky();
+drawSky();
