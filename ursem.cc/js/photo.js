@@ -25,9 +25,9 @@ function init() {
       });
 
       result.images.reverse().forEach(img => {
-        if (!img.tags.includes("Opa en Opoe")) {
-          let thisURL = img.url.replace("images", "thumbs");
-          imgHTML.push("<li><img class='img' src='" + thisURL + "' loading='lazy'></li>");
+        if (img.tags.includes("Index")) {
+          let imgJpgUrl = img.url.replace(".webp", ".jpg");
+          imgHTML.push("<li><img class='img' src='" + img.url + "' loading='lazy'></li>");
         }
       });
 
