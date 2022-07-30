@@ -90,12 +90,33 @@ html, body {
 
 #sitecover h2 {
   position: absolute;
-  left: 5vw;
-  top: 40vh;
+  top: 20vh;
+  right: 5vw;
   text-align: right;
-  width: 90vw;
   font-size: 144px;
   color: rgb(61, 66, 67);
+}
+
+@media screen and (max-width: 600px) {
+  #sitecover h1 {
+    top: 40vh;
+    font-size: 48px;
+  }
+
+  #sitecover h2 {
+    top: 48vh;
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #sitecover h1 {
+    font-size: 48px;
+  }
+
+  #sitecover h2 {
+    font-size: 48px;
+  }
 }
 
 /*PHOTO PAGE*/
