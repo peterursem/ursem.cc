@@ -83,7 +83,7 @@ html, body {
 }
 
 #sitecover h1 {
-  position: absolute;
+  position: static;
   left: 5vw;
   top: 10vh;
   text-align: left;
@@ -92,7 +92,7 @@ html, body {
 }
 
 #sitecover h2 {
-  position: absolute;
+  position: static;
   top: 20vh;
   right: 5vw;
   text-align: right;
