@@ -78,6 +78,26 @@ html, body {
   background-position: center;
   background-size: cover;
 }
+
+#sitecover h1 {
+  position: absolute;
+  left: 5vw;
+  top: 10vh;
+  text-align: left;
+  font-size: 144px;
+  color: rgb(198, 236, 245);
+}
+
+#sitecover h2 {
+  position: absolute;
+  left: 5vw;
+  top: 40vh;
+  text-align: right;
+  width: 90vw;
+  font-size: 144px;
+  color: rgb(61, 66, 67);
+}
+
 /*PHOTO PAGE*/
 
 #message {
@@ -101,14 +121,15 @@ html, body {
   width: 100%;
   white-space: nowrap;
   overflow-x: auto;
-  padding-top: 9px;
-  padding-bottom: 14px;
-  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 0px;
   margin-bottom: 20px;
   border-top: beige;
   border-bottom: beige;
   border-top-style: solid;
   border-bottom-style: solid;
+  border-width: 10px;
 }
 
 .tags {
