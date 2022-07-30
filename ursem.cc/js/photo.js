@@ -27,7 +27,7 @@ function init() {
       result.images.reverse().forEach(img => {
         if (img.tags.includes("Index")) {
           let imgJpgUrl = img.url.replace(".webp", ".jpg");
-          imgHTML.push("<li><img class='img' srcset='" + img.url + " " + imgJpgUrl + "' loading='lazy'></li>");
+          imgHTML.push("<li><img class='img' srcset='" + img.url + "' loading='lazy'></li>");
         }
       });
 
