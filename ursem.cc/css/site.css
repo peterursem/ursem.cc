@@ -74,7 +74,7 @@ html, body {
   margin: 0;
   width: 100vw;
   height: 98vh;
-  background-image: url('http://127.0.0.1:5500/images/web/cover.gif');
+  background-image: url('/images/web/cover.gif');
   background-position: center;
   background-size: cover;
 }
