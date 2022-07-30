@@ -27,7 +27,7 @@ function init() {
       result.images.reverse().forEach(img => {
         if (img.tags.includes("Index")) {
           let imgJpgUrl = img.url.replace(".webp", ".jpg");
-          imgHTML.push("<li><img class='img' src='" + img.url + "' loading='lazy'></li>");
+          imgHTML.push("<li><img class='img' srcset='" + img.url + " " + imgJpgUrl + "' loading='lazy'></li>");
         }
       });
 
@@ -51,8 +51,7 @@ function setTag(tag) {
       let imgHTML = [];
       imgMatches = data.images.reverse().filter(img => {
         if (img.tags.includes("Opa en Opoe")) {
-          let thisURL = img.url.replace("images", "thumbs");
-          imgHTML.push("<li><img class='img opa' src='" + thisURL + "'></li>");
+          imgHTML.push("<li><img class='img opa' src='" + img.url + "'></li>");
         }
       });
       imgSection.innerHTML = imgHTML.join(' ');
@@ -152,7 +151,8 @@ function setModals(){
     img.classList.add(orientation);
     img.onclick = function(){
       modal.style.display = "block";
-      let fullURL = this.src.replace("thumbs", "images");
+      var fullURL = this.src.replace("thumbs", "images");
+      fullURL = fullURL.replace(".webp", ".jpg");
       modalImg.src = fullURL;
     }
   }
