@@ -3,11 +3,13 @@
 @font-face {
     font-family: 'dm_serif';
     src: url(/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format("truetype");
+    font-display: swap;
 }
 
 @font-face {
   font-family: 'greycliff';
   src: url(/fonts/Fontspring-DEMO-greycliffcf-heavy.otf) format("opentype");
+  font-display: swap;
 }
 
 html, body {
@@ -35,6 +37,7 @@ html, body {
 
 .logo {
     height: 60px;
+    width: 135px;
     vertical-align: middle;
     padding-right: 12px;
 }
