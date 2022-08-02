@@ -73,6 +73,7 @@ html, body {
 /*COVER*/
 
 #sitecover {
+  position: relative;
   padding: 0;
   margin: 0;
   width: 100vw;
@@ -80,46 +81,6 @@ html, body {
   background-image: url('/images/web/cover.gif');
   background-position: center;
   background-size: cover;
-}
-
-#sitecover h1 {
-  position: static;
-  left: 5vw;
-  top: 10vh;
-  text-align: left;
-  font-size: 144px;
-  color: rgb(198, 236, 245);
-}
-
-#sitecover h2 {
-  position: static;
-  top: 20vh;
-  right: 5vw;
-  text-align: right;
-  font-size: 144px;
-  color: rgb(61, 66, 67);
-}
-
-@media screen and (max-width: 600px) {
-  #sitecover h1 {
-    top: 40vh;
-    font-size: 48px;
-  }
-
-  #sitecover h2 {
-    top: 48vh;
-    font-size: 48px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  #sitecover h1 {
-    font-size: 48px;
-  }
-
-  #sitecover h2 {
-    font-size: 48px;
-  }
 }
 
 /*PHOTO PAGE*/
