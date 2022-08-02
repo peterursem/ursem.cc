@@ -35,7 +35,7 @@ function init() {
       imgSection.innerHTML = imgHTML.join(' ');
       
       setModals();
-      printImgs([]);
+      printImgs(["Index"]);
       printMsg("Start");
     });
   });
