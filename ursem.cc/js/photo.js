@@ -4,29 +4,40 @@
 //  Hello to anyone here!
 
 const colours = ['#cfc7fa', '#e2c6ee', '#efc8dd', '#d7e9db', '#ced9ed'];
+const loadChunkSize = 12;
 var imgSection = document.getElementById("imgs");
-var data = {};
-var tags = [];
-var possibleTags = [];
+var data = {}; //The contents of the image listings database
 var hide = true;
 
 //INIT PAGE
+var imgQueue = [];
+var opaPhotos = [];
 function init() {
   fetch('images/database.json')
   .then(r => {
     r.json()
     .then(result => {
+      //Arrays for objects to load into the page.
       let tagHTML = [];
       let imgHTML = [];
+
 
       result.tags.forEach(tag => {
         let tagStr ='"' + tag + '"'; 
         tagHTML.push("<a href='javascript:void(0);' class='tags "+ tag +"' onclick='setTag(" + tagStr + ")'>" + tag + "</a> ");
       });
 
+      let i = 0;
       result.images.reverse().forEach(img => {
-        if (img.tags.includes("Index")) {
-          imgHTML.push("<li><img class='img' src='" + img.url + "' loading='lazy'></li>");
+        if (img.tags.includes("Index") && i <= loadChunkSize) {
+          imgHTML.push("<li><img class='img' src='" + img.url + "'></li>");
+          i++
+        }
+        else if (!img.tags.includes("Opa en Opoe")){
+          imgQueue.push("<li><img class='img' src='" + img.url + "'></li>");
+        }
+        else {
+          opaPhotos.push("<li><img class='img' src='" + img.url + "'></li>");
         }
       });
 
@@ -35,25 +46,39 @@ function init() {
       imgSection.innerHTML = imgHTML.join(' ');
       
       setModals();
-      printImgs(["Index"]);
+      showImgs([]);
       printMsg("Start");
+      console.log(imgQueue);
     });
   });
 }
 init();
+var scrollTimer;
+var body = document.querySelector("body");
+body.addEventListener("scroll", function (event) {
+  clearTimeout(scrollTimer);
+  scrollTimer = setTimeout(growPage, 100);
+});
+function growPage(){
+  var height = body.scrollHeight - window.innerHeight;
+  if (height - body.scrollTop < 400) {
+    let newHTML = [imgSection.innerHTML];
+    for (i = 0; i < loadChunkSize; i++) {
+      newHTML.push(imgQueue.reverse().pop());
+    }
+    imgSection.innerHTML = newHTML.join(' ');
+    setModals();
+    showImgs(tags);
+  }
+}
 
 //A TAG IS CLICKED
+var tags = []; //The Tags being searched by the user
 var opaClicked = false;
 function setTag(tag) {
   if (tag === "Opa en Opoe") {
     if(opaClicked === false) {
-      let imgHTML = [];
-      imgMatches = data.images.reverse().filter(img => {
-        if (img.tags.includes("Opa en Opoe")) {
-          imgHTML.push("<li><img class='img opa' src='" + img.url + "'></li>");
-        }
-      });
-      imgSection.innerHTML = imgHTML.join(' ');
+      imgSection.innerHTML = opaPhotos;
       setModals();
       opaClicked = true;
     }
@@ -80,7 +105,7 @@ function setTag(tag) {
     tags.splice(index, 1);
   } 
 
-  printImgs(tags);
+  showImgs(tags);
   printMsg(tag);
 
   let removeTags = data.tags.filter(tag => !possibleTags.includes(tag));
@@ -95,7 +120,7 @@ function setTag(tag) {
 }
 
 //APPLY FILTERS
-function printImgs(filters) {
+function showImgs(filters) {
   let imgMatches = [];
   possibleTags = [];
 
@@ -135,7 +160,6 @@ function printMsg(tag) {
   }
 }
 
-
 //MODAL OVERLAY
 function setModals(){
   var modal = document.getElementById("imgModal");
@@ -150,7 +174,7 @@ function setModals(){
     img.classList.add(orientation);
     img.onclick = function(){
       modal.style.display = "block";
-      var fullURL = this.src.replace("thumbs", "images");
+      let fullURL = this.src.replace("thumbs", "images");
       fullURL = fullURL.replace(".webp", ".jpg");
       modalImg.src = fullURL;
     }
