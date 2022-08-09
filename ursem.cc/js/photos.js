@@ -3,7 +3,7 @@
 //  V2 - August '22
 //  Hello to anyone here!
 
-const loadChunkSize = 4;
+const loadChunkSize = 5;
 const selectionColours = ['#cfc7fa', '#e2c6ee', '#efc8dd', '#d7e9db', '#ced9ed'];
 const hide = true;
 
@@ -32,20 +32,8 @@ function init(){
             tagBar.appendChild(tagElem);
             loadedImgs++;
     });
-    printMsg("Index")
-    //Print Index Images
-    let newImages = [];
-    database.images.forEach(img => {
-        if(img.tags.includes("Index")) {
-            let imgLi = document.createElement("li");
-            let imgElem = document.createElement("img");
-                imgElem.src = img.url;
-                imgElem.className = "img";
-                imgLi.appendChild(imgElem);
-                newImages.push(imgLi);
-        }
-    });
-    imgSection.replaceChildren(...newImages);
+    setTag("");
+    printMsg("Index");
 }
 
 var tags = [];
@@ -56,16 +44,18 @@ function setTag(tag){
     loadedImgs = 0;
 
     //Draw Tag Buttons
-    if(tags.includes(tag)){
-        tagRef.classList.remove('selected');
-        tagRef.style.setProperty('background-color', '#202020')
-        tags.splice(index, 1)
-    }
-    else {
-        let tagColour = selectionColours[Math.floor(Math.random()*selectionColours.length)];
-        tagRef.classList.add('selected');
-        tagRef.style.setProperty('background-color', tagColour);
-        tags.push(tag);
+    if(tag){
+        if(tags.includes(tag)){
+            tagRef.classList.remove('selected');
+            tagRef.style.setProperty('background-color', '#202020')
+            tags.splice(index, 1)
+        }
+        else {
+            let tagColour = selectionColours[Math.floor(Math.random()*selectionColours.length)];
+            tagRef.classList.add('selected');
+            tagRef.style.setProperty('background-color', tagColour);
+            tags.push(tag);
+        }
     }
 
     let possibleTags = [];
@@ -117,11 +107,11 @@ function printImgs(printQueue, reset){
     }
     loadedImgs = loadedImgs + loadChunkSize;
     if(reset == true) imgSection.replaceChildren(...newImages);
+    setModals();
 }
 
 document.body.addEventListener('scroll', () => {
-    scrollLength = body.scrollTop + window.innerHeight;
-    if(document.body.scrollTop + window.innerHeight >= body.scrollHeight){
+    if(body.scrollTop + window.innerHeight >= body.scrollHeight){
         printImgs(imgMatches, false);
     }
 })
