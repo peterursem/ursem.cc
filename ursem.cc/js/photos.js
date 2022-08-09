@@ -111,7 +111,7 @@ function printImgs(printQueue, reset){
 }
 
 document.body.addEventListener('scroll', () => {
-    if(body.scrollTop + window.innerHeight >= body.scrollHeight){
+    if(body.scrollTop + window.innerHeight >= body.scrollHeight - 15){
         printImgs(imgMatches, false);
     }
 })
