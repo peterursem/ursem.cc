@@ -124,5 +124,8 @@ function frame() {
 }
 
 document.addEventListener("click", function(){
-    if(document.getElementById('fireworksEnabled').checked === true) newFireworkRocket(event.pageX, event.pageY+580);
+    if(document.getElementById('fireworksEnabled').checked === true) {
+        newFireworkRocket(event.pageX, event.pageY+580);
+        gtag('event', 'launch_firework');
+    }
 });
