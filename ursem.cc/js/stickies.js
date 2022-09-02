@@ -1,5 +1,5 @@
-import { initializeApp } from "firebase/app";
-import { getDatabase, ref, set, onValue } from "firebase/database";
+import { initializeApp } from "/firebase/app";
+import { getDatabase, ref, set, onValue } from "/firebase/database";
 
 const firebaseConfig = {
   databaseURL: "https://ursemca.firebaseio.com/",
