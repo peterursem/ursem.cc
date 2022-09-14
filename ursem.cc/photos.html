@@ -38,16 +38,28 @@
 
         gtag('config', 'G-W65J318WSL');
         </script>
+
     </head>
     <body id="body">
         <div id="theSky"></div>
-            <div id="sitecover">
-                <ul id="navbar">
-                    <li class="navitem"><a href="/"><img class="logo" src="images/web/logo.svg"></a><a class="topText">With stunning graphics</a></li>
-                    <li class="navitem"><a class="topText">Enable Fireworks? </a><input type="checkbox" id="fireworksEnabled"></li>
-                </ul>
-            </div>
+
+        <div id="sitecover">
+            <ul id="navbar">
+                <li class="navitem"><a href="/"><img class="logo" src="images/web/logo.svg"></a><a class="topText">With stunning graphics</a></li>
+                <li class="navitem"><a class="topText">Enable Fireworks? </a><input type="checkbox" id="fireworksEnabled"></li>
+            </ul>
+        </div>
+
+        <div id="tagBar"></div>
+        <section id="message"></section>
+        <ul id="imgs"></ul>
+
+        <div id="imgModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
     </body>
+    <script src="js/photos.js"></script>
     <script src="js/main.js"></script>
     <script src="js/firework.js"></script>
     <link rel="stylesheet" href="css/images.css">

@@ -10,6 +10,54 @@
     display: block;
 }
 
+#message {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  background: rgb(206,217,237);
+  background: linear-gradient(130deg, rgba(206,217,237,1) 0%, rgba(207,199,250,1) 75%, rgba(226,198,238,1) 100%);
+  border-radius: 10px;
+  font-family: "dm_serif";
+  font-size: 18px;
+}
+
+#tagBar {
+  display: block;
+  position: sticky;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-top: beige;
+  border-bottom: beige;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 10px;
+}
+
+.tags {
+  padding: 0 15px;
+  border-style: solid;
+  border-color: #BBB;
+  border-radius: 10px;
+  color: #bbb;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'greycliff';
+}
+
+.selected {
+  color: #202020;
+}
+
+
 #imgs {   
     display: flex;
     flex-wrap: wrap;
