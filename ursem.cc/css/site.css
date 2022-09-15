@@ -36,15 +36,20 @@ html, body {
 }
 
 .logo {
-    height: 60px;
-    width: 135px;
+    height: 50px;
+    width: 113px;
     vertical-align: middle;
-    padding-right: 12px;
+    padding-inline: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    background-color: rgba(20,20,20,0.5);
+    border-radius: 10px;
 }
 
 .topText {
   font-family: 'dm_serif';
-  color: #bbb;
+  color: #000;
 }
 
 .navitem {
@@ -70,16 +75,40 @@ html, body {
   }
 }
 
-#sitecover {
+body{
+  scroll-snap-type: y mandatory;
+}
+
+.sitecover {
   position: relative;
   padding: 0;
   margin: 0;
   width: 100vw;
-  height: 98vh;
-  background-image: url('/images/2020-2021/farm/farm-18.jpg');
+  height: 100vh;
   background-position: center;
   background-size: cover;
+  scroll-snap-align: start;
 }
+
+#im1 {
+  background-image: url('/ursem.cc/images/2020-2021/farm/farm-18.jpg');
+}
+#im2{
+  background-image: url('/ursem.cc/images/2020-2021/champs/1.jpg');
+}
+#im3{
+  background-image: url('/ursem.cc/images/2020-2021/abandoned/abandoned-4.jpg');
+}
+#im4{
+  background-image: url('/ursem.cc/images/2022/06/04/IMG_5957.jpg');
+}
+#im5{
+  background-image: url('/ursem.cc/images/2020-2021/quarantine/quarantine_2.jpg');
+}
+#im6{
+  background-image: url('/ursem.cc/images/2020-2021/disposable/Disposable-20.jpg');
+}
+
 
   /* CONTACT */
   
