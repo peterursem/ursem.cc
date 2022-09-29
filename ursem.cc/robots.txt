@@ -3,11 +3,9 @@
 
 User-agent: googlebot
 
-Disallow: /photo.html
 Disallow: /21day.html
-Disallow: /resume.pdf
 Disallow: /404.html
-
 Disallow: /thumbs
 Disallow: /images/web
 Disallow: /images/Opa_Opoe
+Disallow: /images/database.json

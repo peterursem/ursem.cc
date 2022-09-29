@@ -1,13 +1,16 @@
 /* Copyright 2020 - 2022 Peter Ursem, All Rights Reserved */
 
 /*Image Previews*/
-#coverimg {
-    width: 95vw;
-    height: 80vh;
-    margin: auto;
-    object-fit: cover;
-    border-radius: 18px;
-    display: block;
+
+#sitecover{
+  background-image: url('/ursem.cc/images/web/cover.gif');
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
 
 #message {
