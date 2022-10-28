@@ -1,15 +1,6 @@
 /* Copyright 2020 - 2022 Peter Ursem, All Rights Reserved */
 
 /*Image Previews*/
-#coverimg {
-    width: 95vw;
-    height: 80vh;
-    margin: auto;
-    object-fit: cover;
-    border-radius: 18px;
-    display: block;
-}
-
 #imgs {   
     display: flex;
     flex-wrap: wrap;
@@ -88,16 +79,8 @@
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
-    height: auto;
-  }
-
-  @media screen and (max-width: 800px) {
-    .modal-content{
-      width: 75%;
-      height: auto;
-    }
+    max-width: 80%;
+    max-height: 80%;
   }
 
   .modal-content, #caption { 
