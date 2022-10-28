@@ -77,7 +77,7 @@ html, body {
   padding: 0;
   margin: 0;
   width: 100vw;
-  height: 98vh;
+  height: 100vh;
   background-image: url('/images/web/301450AE-A3E1-44F4-AF5E-F748C8BE55F1.jpeg');
   background-position: center;
   background-size: cover;
@@ -131,15 +131,6 @@ html, body {
 .selected {
   color: #202020;
 }
-
-  /* CONTACT */
-  
-  #contact {
-    width: 80vw;
-    display: block;
-    margin: auto;
-    margin-top: 15%;
-  }
 
   /*FIREWORKS*/
 
