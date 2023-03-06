@@ -123,9 +123,27 @@ function frame() {
     }
 }
 
+var fireworksEnabled = false;
 document.getElementById('sitecover').addEventListener("click", function(){
-    if(document.getElementById('fireworksEnabled').checked === true) {
+    if(fireworksEnabled === true) {
         newFireworkRocket(event.pageX, event.pageY+580);
         gtag('event', 'launch_firework');
     }
 });
+
+var fireworkImg = document.getElementById('frwkImg');
+var fireworkToggle = document.getElementById('frwkToggle');
+fireworkToggle.onclick = function(){
+    switch (fireworksEnabled) {
+        case true:
+            fireworksEnabled = false;
+            fireworkToggle.style.bottom = -5 + '%';
+            fireworkImg.src = "/images/web/frwk-off.png";
+            break;
+        case false:
+            fireworksEnabled = true;
+            fireworkImg.src = "/images/web/frwk-on.png";
+            fireworkToggle.style.bottom = 1 + '%';
+            break;
+    }
+};

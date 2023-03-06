@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="shuffleButton" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #84c09e;
+      }
+    </style>
+  </defs>
+    <g>
+      <rect class="cls-1" x="0" y="60" width="33" height="15"/>
+      <rect class="cls-1" x="22.39" y="34.86" width="70.39" height="15" transform="translate(-13.09 53.13) rotate(-45)"/>
+      <circle class="cls-1" cx="82.5" cy="17.5" r="7.5"/>
+      <circle class="cls-1" cx="32.5" cy="67.5" r="7.5"/>
+      <g>
+        <polygon class="cls-1" points="135 17.5 100 0 100 35 135 17.5"/>
+        <rect class="cls-1" x="82" y="10" width="18" height="15"/>
+      </g>
+    </g>
+    <g>
+      <rect class="cls-1" y="10" width="33" height="15"/>
+      <rect class="cls-1" x="50.09" y="7.44" width="15" height="70.39" transform="translate(-13.28 53.21) rotate(-45)"/>
+      <circle class="cls-1" cx="82.5" cy="67.5" r="7.5"/>
+      <circle class="cls-1" cx="32.5" cy="17.5" r="7.5"/>
+      <g>
+        <polygon class="cls-1" points="135 67.5 100 85 100 50 135 67.5"/>
+        <rect class="cls-1" x="82" y="60" width="18" height="15"/>
+      </g>
+    </g>
+</svg>

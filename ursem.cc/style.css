@@ -28,19 +28,20 @@ html::-webkit-scrollbar , body::-webkit-scrollbar , #containers::-webkit-scrollb
     left: 0;
     top: 0;
     height: 100vh;
-    width: 101vw;
+    width: 100%;
     scroll-snap-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
     z-index: 2;
+    overflow: hidden;
 }
 
 #sitecover h1 {
     position: absolute;
     left: 5vw;
     font-family: 'greycliff';
-    font-size: 96pt;
+    font-size: 100px;
 }
 
 #sitecover #last {
@@ -58,24 +59,40 @@ html::-webkit-scrollbar , body::-webkit-scrollbar , #containers::-webkit-scrollb
     scroll-snap-align: center;
 }
 
+#shuffle {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: 102vh;
+  right: 2vw;
+  width: 4%;
+  height: auto;
+  z-index: 2;
+}
+
+button img {
+  width: 100%;
+  height: 100%;
+}
+
 #imgs{
-    top: 110vh;
-    height: 80vh;
-    z-index: 1;
+  top: 110vh;
+  height: 80vh;
+  z-index: 1;
 }
 
 #bgs{
-    overflow: hidden;
-    z-index: 0;
-    top: 100vh;
-    height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  top: 100vh;
+  height: 100vh;
 }
 
 img {
-    object-fit: contain;
-    margin-inline: auto;
-    display: block;
-    max-height: 100%;
+  object-fit: contain;
+  margin-inline: auto;
+  display: block;
+  max-height: 100%;
 }
 
 #bgs img {
@@ -135,6 +152,22 @@ img {
 
   #theSky {
     position: absolute;
+  }
+
+  #frwkToggle {
+    position:absolute;
+    border: none;
+    background-color: transparent;
+    width: 5vw;
+    height: auto;
+    right: 2vw;
+    bottom: -5%;
+  }
+
+  #frwkToggle img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
   }
 
   .fireworkRocket {
