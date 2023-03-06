@@ -137,7 +137,7 @@ fireworkToggle.onclick = function(){
     switch (fireworksEnabled) {
         case true:
             fireworksEnabled = false;
-            fireworkToggle.style.bottom = -5 + '%';
+            fireworkToggle.style.bottom = -2 + '%';
             fireworkImg.src = "/images/web/frwk-off.png";
             break;
         case false:

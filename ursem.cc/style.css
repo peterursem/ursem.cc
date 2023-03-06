@@ -5,69 +5,61 @@
 }
 
 html, body {
-    height: 200vh;
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    scroll-snap-type: y mandatory;
-    cursor: grab;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(30, 30, 30);
-    z-index: -1;
-}
-
-html::-webkit-scrollbar , body::-webkit-scrollbar , #containers::-webkit-scrollbar {
-    display: none;
+  z-index: -1;
+  height: 200vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(30, 30, 30);
+  cursor: grab;
 }
 
 #sitecover {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    scroll-snap-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    z-index: 2;
-    overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  scroll-snap-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
 }
 
 #sitecover h1 {
-    position: absolute;
-    left: 5vw;
-    font-family: 'greycliff';
-    font-size: 100px;
+  position: absolute;
+  font-family: 'greycliff';
+  font-size: 100px;
+}
+
+#sitecover #first {
+  left: 5vw;
 }
 
 #sitecover #last {
-    left : auto;
-    right: 5vw;
+  right: 5vw;
 }
 
 .containers{
-    width: 100%;
-    position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    scroll-snap-align: center;
+  position: absolute;
+  width: 100%;
+  scroll-snap-align: center;
 }
 
 #shuffle {
   position: absolute;
-  background-color: transparent;
-  border: none;
   top: 102vh;
   right: 2vw;
-  width: 4%;
+  width: 50px;
   height: auto;
   z-index: 2;
+}
+
+button{
+  background-color: transparent;
+  border: none;
 }
 
 button img {
@@ -82,114 +74,117 @@ button img {
 }
 
 #bgs{
-  overflow: hidden;
   z-index: 0;
   top: 100vh;
   height: 100vh;
+  overflow: hidden;
 }
 
 img {
+  height: 100%;
+  width: 90%;
+  display: block;
   object-fit: contain;
   margin-inline: auto;
-  display: block;
-  max-height: 100%;
-}
-
-#bgs img {
-    padding-block: 7.5vh;
-    height: 85vh;
-    width: auto;
-    filter: blur(50px) opacity(0.5);
-    border-radius: 5%;
 }
 
 #imgs img {
-    margin-bottom: 10%;
-    scroll-snap-align: center;
+  margin-bottom: 15vh;
+  scroll-snap-align: center;
 }
 
-.horizontal {
-    width: 75%;
-    height: auto;
+#bgs img {
+  margin-block: 15vh;
+  height: 80vh;
+  filter: blur(50px) opacity(0.5);
+  border-radius: 5%;
 }
 
-.vertical {
-    height: 100%;
-    width: auto;
+.nobars {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-snap-type: y mandatory;
 }
 
-  /*FIREWORKS*/
+.nobars::-webkit-scrollbar {
+    display: none;
+}
 
-  @keyframes firework-rocket-animation {
-    0% {background-color: #000;}
-    25% {background-color: rgb(216, 204, 39);}
-    100% {background-color: #000;}
-  }
+/*FIREWORKS*/
 
-  @-webkit-keyframes firework-rocket-animation {
-    0% {background-color: #000;}
-    25% {background-color: rgb(216, 204, 39);}
-    100% {background-color: #000;}
-  }
+@keyframes firework-rocket-animation {
+  0% {background-color: #000;}
+  25% {background-color: rgb(216, 204, 39);}
+  100% {background-color: #000;}
+}
 
-  @keyframes firework-animation {
-    0% {background-color: #ced9ed;}
-    20% {background-color: #cfc7fa;}
-    40% {background-color: #e2c6ee;}
-    60% {background-color: #efc8dd;}
-    80% {background-color: #d7e9db;}
-    100% {background-color: #ced9ed;}
-  }
+@-webkit-keyframes firework-rocket-animation {
+  0% {background-color: #000;}
+  25% {background-color: rgb(216, 204, 39);}
+  100% {background-color: #000;}
+}
 
-  @-webkit-keyframes firework-animation {
-    0% {background-color: #ced9ed;}
-    20% {background-color: #cfc7fa;}
-    40% {background-color: #e2c6ee;}
-    60% {background-color: #efc8dd;}
-    80% {background-color: #d7e9db;}
-    100% {background-color: #ced9ed;}
-  }
+@keyframes firework-animation {
+  0% {background-color: #ced9ed;}
+  20% {background-color: #cfc7fa;}
+  40% {background-color: #e2c6ee;}
+  60% {background-color: #efc8dd;}
+  80% {background-color: #d7e9db;}
+  100% {background-color: #ced9ed;}
+}
 
-  #theSky {
-    position: absolute;
-  }
+@-webkit-keyframes firework-animation {
+  0% {background-color: #ced9ed;}
+  20% {background-color: #cfc7fa;}
+  40% {background-color: #e2c6ee;}
+  60% {background-color: #efc8dd;}
+  80% {background-color: #d7e9db;}
+  100% {background-color: #ced9ed;}
+}
 
-  #frwkToggle {
-    position:absolute;
-    border: none;
-    background-color: transparent;
-    width: 5vw;
-    height: auto;
-    right: 2vw;
-    bottom: -5%;
-  }
+#theSky {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
-  #frwkToggle img {
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
-  }
+#frwkToggle {
+  position:absolute;
+  right: 2vw;
+  bottom: -2%;
+  width: 50px;
+  height: auto;
+}
 
-  .fireworkRocket {
-    z-index : 999;
-    position: absolute;
-    height : 10px;
-    width : 10px;
-    border-radius : 10px;
-    animation-name : firework-rocket-animation;
-    animation-timing-function : linear;
-    animation-duration : 1s;
-    animation-iteration-count : infinite;
-  }
+#frwkToggle img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
 
-  .firework {
-    z-index : 999;
-    position: absolute;
-    height : 10px;
-    width : 10px;
-    border-radius : 10px;
-    animation-name : firework-animation;
-    animation-timing-function : linear;
-    animation-duration : 1s;
-    animation-iteration-count : infinite;
-  }
+.fireworkRocket {
+  z-index : 999;
+  position: absolute;
+  height : 10px;
+  width : 10px;
+  border-radius : 10px;
+  animation-name : firework-rocket-animation;
+  animation-timing-function : linear;
+  animation-duration : 1s;
+  animation-iteration-count : infinite;
+}
+
+.firework {
+  z-index : 999;
+  position: absolute;
+  height : 10px;
+  width : 10px;
+  border-radius : 10px;
+  animation-name : firework-animation;
+  animation-timing-function : linear;
+  animation-duration : 1s;
+  animation-iteration-count : infinite;
+}
