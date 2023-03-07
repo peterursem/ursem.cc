@@ -4,7 +4,7 @@ const fireworkRocketInitVelocity = 1.5;
 const fireworkRocketFlyTime = 500;
 
 const fireworkInitVelocity = 0.5; 
-const fireworkFlyTime = 2500;
+const fireworkFlyTime = 1000;
 
 const airResistance = 0.0005;
 const gravity = 0.0005;
@@ -69,7 +69,7 @@ function newFireworkStar(x,y)
     while(launchAngle < 360)
     {
         newFirework(x,y,launchAngle);
-        launchAngle += 10;
+        launchAngle += 36;
     }
 }
 
