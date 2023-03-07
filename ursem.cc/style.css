@@ -42,6 +42,12 @@ html, body {
   right: 5vw;
 }
 
+@media screen and (max-width: 450px) {
+  #sitecover h1 {
+    font-size: 75px;
+  }
+}
+
 .containers{
   position: absolute;
   width: 100%;
@@ -89,12 +95,13 @@ img {
 }
 
 #imgs img {
-  margin-bottom: 15vh;
+  margin-bottom: 30vh;
   scroll-snap-align: center;
 }
 
 #bgs img {
-  margin-block: 15vh;
+  margin-top: 10vh;
+  margin-bottom: 30vh;
   height: 80vh;
   filter: blur(50px) opacity(0.5);
   border-radius: 5%;

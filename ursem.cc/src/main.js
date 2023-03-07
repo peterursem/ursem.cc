@@ -15,7 +15,7 @@ function setCover() {
     let first = document.getElementById("first");
     let last = document.getElementById("last");
     first.style.color = getThemeColor();
-    first.style.bottom = getRandHeight('first');
+    first.style.top = getRandHeight('first');
     last.style.color = getThemeColor();
     last.style.bottom = getRandHeight('last');
     coverDiv.appendChild(first);
@@ -27,10 +27,9 @@ function getThemeColor() {
     return themeColors[Math.floor(Math.random() * themeColors.length)];
 }
 
-let height = 100;
-function getRandHeight() {
-    height = Math.floor(Math.random() * (height - 10));
-    return 'min(max(' + height + '% , 5%), calc(100% - 200px))';
+function getRandHeight(name) {
+    let height = Math.floor(Math.random() * (window.innerHeight*0.15));
+    return height + 'px';
 }
 
 //######## Photo Page ########//
