@@ -8,23 +8,34 @@ export default class Scroller {
     constructor(){
         this.div = document.getElementById('imgs');
         this.bgDiv = document.getElementById('bgs');
-        this.div.onscroll = () => {this.handleScroll(this)};
+        this.setScrollListener();
+        //this.div.onscroll = () => {this.handleScroll(this)};
         this.scrollTimer = -1;
+    }
+
+    setScrollListener(){
+        this.div.addEventListener('scroll', () => {
+            this.div.scrollTop = 0;
+            this.handleScroll(this);
+        }, {once: true});
     }
 
     scrollEvent = new Event('scrollFinished');
 
     scrollFinished() {
-        if(this.div.scrollTop > (0.5 * window.innerHeight)){
+            this.div.scrollTop = 0;
+            console.log('Scroll Finished');
             this.emit('scrollFinished');
-        }
+            this.setScrollListener();
     }
     
+    lasttime = Date.now();
     handleScroll(that) {
+        console.log('Handle Scroll...');
         that.bgDiv.scrollTop = that.div.scrollTop;
-        if (that.scrollTimer != -1)
-            clearTimeout(that.scrollTimer);
-        that.scrollTimer = setTimeout(() => {that.scrollFinished();}, 100);
+        console.log('dScroll:',Date.now() - this.lasttime, 'BG:', that.bgDiv.scrollTop, '/', that.bgDiv.scrollHeight, 'IMG:', that.div.scrollTop, '/', that.div.scrollHeight);
+        that.lasttime = Date.now();
+        that.scrollTimer = setTimeout(() => {that.scrollFinished();}, 2500);
     }
 
     emit(method, payload = null) {

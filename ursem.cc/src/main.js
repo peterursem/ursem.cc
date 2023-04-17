@@ -15,9 +15,9 @@ function setCover() {
     let first = document.getElementById("first");
     let last = document.getElementById("last");
     first.style.color = getThemeColor();
-    first.style.top = getRandHeight('first');
+    first.style.top = getRandHeight();
     last.style.color = getThemeColor();
-    last.style.bottom = getRandHeight('last');
+    last.style.bottom = getRandHeight();
     coverDiv.appendChild(first);
     coverDiv.appendChild(last);
 }
@@ -27,7 +27,7 @@ function getThemeColor() {
     return themeColors[Math.floor(Math.random() * themeColors.length)];
 }
 
-function getRandHeight(name) {
+function getRandHeight() {
     let height = Math.floor(Math.random() * (window.innerHeight*0.15));
     return height + 'px';
 }
