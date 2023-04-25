@@ -46,7 +46,7 @@ html, body {
 
 .topText {
   font-family: 'dm_serif';
-  color: #444;
+  color: #ddd;
 }
 
 .navitem {
@@ -83,7 +83,7 @@ html, body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('/images/2023/hualtuco/hualtuco-3.jpg');
+  background-image: url('/images/2023/hualtuco/hualtuco-15.jpg');
   background-position: center;
   background-size: cover;
 }
