@@ -88,6 +88,14 @@ html, body {
   background-size: cover;
 }
 
+#scrollArrow {
+  position: absolute;
+  bottom: 1vh;
+  width: 5vw;
+  height: auto;
+  left: 47.5vw;
+}
+
 /*PHOTO PAGE*/
 
 #message {
