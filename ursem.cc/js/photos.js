@@ -20,6 +20,7 @@ fetch('images/database.json')
 });
 
 function init(){
+    document.getElementById('slogan').innerText = database.slogan;
     //Print All Tags
     let tagBar = document.getElementById('tagBar');
     database.tags.forEach(tag => {

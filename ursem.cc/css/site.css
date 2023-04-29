@@ -47,6 +47,7 @@ html, body {
 .topText {
   font-family: 'dm_serif';
   color: #ddd;
+  vertical-align: middle;
 }
 
 .navitem {
