@@ -2535,7 +2535,7 @@
             "tags": [
                 "Mexico"
             ]
-        },        
+        },
         {
             "url": "thumbs/2023/hualtuco/hualtuco-2.webp",
             "tags": [
@@ -2554,7 +2554,7 @@
             "tags": [
                 "Mexico"
             ]
-        },        
+        },
         {
             "url": "thumbs/2023/hualtuco/hualtuco-5.webp",
             "tags": [
@@ -2783,7 +2783,7 @@
             "tags": [
                 "Mexico"
             ]
-        },        
+        },
         {
             "url": "thumbs/2023/hualtuco/hualtuco-42.webp",
             "tags": [
@@ -2791,18 +2791,11 @@
             ]
         },
         {
-            "url": "thumbs/2023/hualtuco/hualtuco-43.webp",
-            "tags": [
-                "Mexico",
-                "Friends"
-            ]
-        },
-        {
             "url": "thumbs/2023/hualtuco/hualtuco-44.webp",
             "tags": [
                 "Mexico"
             ]
-        },        
+        },
         {
             "url": "thumbs/2023/hualtuco/hualtuco-45.webp",
             "tags": [
@@ -2847,12 +2840,6 @@
             ]
         },
         {
-            "url": "thumbs/2023/hualtuco/hualtuco-52.webp",
-            "tags": [
-                "Mexico"
-            ]
-        },
-        {
             "url": "thumbs/2023/hualtuco/hualtuco-54.webp",
             "tags": [
                 "Mexico"
@@ -2881,6 +2868,69 @@
             "tags": [
                 "Mexico",
                 "Friends"
+            ]
+        },
+        {
+            "url": "thumbs/2023/newBike/bike-1.webp",
+            "tags": [
+                "Motorcycle",
+                "Me"
+            ]
+        },
+        {
+            "url": "thumbs/2023/newBike/bike-2.webp",
+            "tags": [
+                "Motorcycle",
+                "Me"
+            ]
+        },
+        {
+            "url": "thumbs/2023/newBike/bike-3.webp",
+            "tags": [
+                "Motorcycle",
+                "Me"
+            ]
+        },
+        {
+            "url": "thumbs/2023/newBike/bike-4.webp",
+            "tags": [
+                "Motorcycle"
+            ]
+        }, 
+        {
+            "url": "thumbs/2023/newBike/bike-5.webp",
+            "tags": [
+                "Motorcycle",
+                "Car"
+            ]
+        },
+        {
+            "url": "thumbs/2023/hwy40/bike-6.webp",
+            "tags": [
+                "Motorcycle"
+            ]
+        },        
+        {
+            "url": "thumbs/2023/hwy40/bike-7.webp",
+            "tags": [
+                "Motorcycle"
+            ]
+        },
+        {
+            "url": "thumbs/2023/hwy40/bike-8.webp",
+            "tags": [
+                "Motorcycle",
+                "Annette",
+                "Rob"
+            ]
+        },
+        {
+            "url": "thumbs/2023/hwy40/bike-9.webp",
+            "tags": [
+                "Motorcycle",
+                "Me",
+                "Annette",
+                "Rob"
             ]
         }
     ],
