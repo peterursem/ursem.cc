@@ -96,7 +96,7 @@ function setTag(tag){
 var loadedImgs = 0;
 function printImgs(printQueue, reset){
     let newImages = [];
-    for(i=loadedImgs; i < loadedImgs + loadChunkSize && i < printQueue.length; i++){
+    for(let i=loadedImgs; i < loadedImgs + loadChunkSize && i < printQueue.length; i++){
         let imgLi = document.createElement("li");
         let imgElem = document.createElement("img");
             imgElem.src = printQueue[i].url;
@@ -105,8 +105,15 @@ function printImgs(printQueue, reset){
         imgSection.appendChild(imgLi);
         if(reset == true) newImages.push(imgLi);
         else imgSection.appendChild(imgLi);
+        gtag('event', 'imgLoaded', {
+            'url': printQueue[i].url,
+            'loadedImgs': i
+        });
     }
     loadedImgs = loadedImgs + loadChunkSize;
+    gtag('event', 'pageLoaded', {
+        'page_number': loadedImgs/loadChunkSize
+    });
     if(reset == true) imgSection.replaceChildren(...newImages);
     setModals();
 }
@@ -147,6 +154,9 @@ function setModals(){
         let fullURL = this.src.replace("thumbs", "images");
         fullURL = fullURL.replace(".webp", ".jpg");
         modalImg.src = fullURL;
+        gtag('event', 'imgClicked', {
+            'url': printQueue[i].url
+        });
       }
     }
   
