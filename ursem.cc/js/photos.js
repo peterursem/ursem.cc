@@ -105,13 +105,13 @@ function printImgs(printQueue, reset){
         imgSection.appendChild(imgLi);
         if(reset == true) newImages.push(imgLi);
         else imgSection.appendChild(imgLi);
-        gtag('event', 'imgLoaded', {
+        gtag('event', 'image_loaded', {
             'url': printQueue[i].url,
             'loadedImgs': i
         });
     }
     loadedImgs = loadedImgs + loadChunkSize;
-    gtag('event', 'pageLoaded', {
+    gtag('event', 'page_loaded', {
         'page_number': loadedImgs/loadChunkSize
     });
     if(reset == true) imgSection.replaceChildren(...newImages);
@@ -154,7 +154,7 @@ function setModals(){
         let fullURL = this.src.replace("thumbs", "images");
         fullURL = fullURL.replace(".webp", ".jpg");
         modalImg.src = fullURL;
-        gtag('event', 'imgClicked', {
+        gtag('event', 'image_clicked', {
             'url': printQueue[i].url
         });
       }
