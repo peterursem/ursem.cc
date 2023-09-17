@@ -155,7 +155,7 @@ function setModals(){
         fullURL = fullURL.replace(".webp", ".jpg");
         modalImg.src = fullURL;
         gtag('event', 'image_clicked', {
-            'url': printQueue[i].url
+            'url': fullURL
         });
       }
     }
