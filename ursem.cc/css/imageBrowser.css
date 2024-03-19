@@ -1,0 +1,100 @@
+@font-face {
+        font-family: 'dm_serif';
+        src: url(/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format("truetype");
+        font-display: swap;
+}
+
+@font-face {
+        font-family: 'greycliff';
+        src: url(/fonts/Fontspring-DEMO-greycliffcf-heavy.otf) format("opentype");
+        font-display: swap;
+}
+
+@media screen and (max-width: 800px) {
+        .grid-sizer,
+        .grid-item{
+                --imageCount: 3;
+        }
+        
+}
+
+@media screen and (max-width: 400px) {
+        .grid-sizer,
+        .grid-item{
+                --imageCount: 1;
+        }
+}
+
+:root {
+        --imageCount: 4;
+        --gutter: 1%;
+}
+
+.titleText {
+        position: absolute;
+        top: 3vh;
+        left: 3.5vw;
+        font-family: 'greycliff';
+        color: white;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.titleText>h1 {
+        font-size: 6vh;
+}
+
+.titleText>h2 {
+        margin-top: -2vh;
+        font-size: 2.5vh;
+}
+
+.collection {
+        margin-top: -2vh;
+        left: -2vw;
+        width: 104vw;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        overflow: hidden;
+}
+
+.collection .background {
+        content: "";
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        display: block;
+
+        background-size: cover;
+
+        -webkit-filter: blur(5px) brightness(60%);
+        -moz-filter: blur(5px) brightness(60%);
+        -o-filter: blur(5px) brightness(60%);
+        -ms-filter: blur(5px) brightness(60%);
+        filter: blur(5px) brightness(60%); 
+}
+
+.grid {
+        height: 80vh;
+        width: 80vw;
+        margin: auto;
+        margin-top: -90vh;
+        float: right;
+}
+
+.gutter-sizer{
+        width: var(--gutter);
+}
+
+.grid-sizer,
+.grid-item { 
+        width: calc((100% / var(--imageCount)) - var(--gutter)); 
+        margin-bottom: var(--gutter);
+}
+
+.grid-item img {
+        width: 100%;
+        border-radius: 15px;
+}

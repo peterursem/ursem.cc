@@ -1,10 +1,10 @@
-/* Copyright 2020 - 2022 Peter Ursem, All Rights Reserved */
+/* Copyright 2023 Peter Ursem, All Rights Reserved */
 
 const fireworkRocketInitVelocity = 1.5;
 const fireworkRocketFlyTime = 500;
 
 const fireworkInitVelocity = 0.5; 
-const fireworkFlyTime = 2500;
+const fireworkFlyTime = 1000;
 
 const airResistance = 0.0005;
 const gravity = 0.0005;
@@ -69,7 +69,7 @@ function newFireworkStar(x,y)
     while(launchAngle < 360)
     {
         newFirework(x,y,launchAngle);
-        launchAngle += 10;
+        launchAngle += 36;
     }
 }
 
@@ -123,9 +123,27 @@ function frame() {
     }
 }
 
-document.addEventListener("click", function(){
-    if(document.getElementById('fireworksEnabled').checked === true) {
+var fireworksEnabled = false;
+document.getElementById('theSky').addEventListener("click", function(){
+    if(fireworksEnabled === true) {
         newFireworkRocket(event.pageX, event.pageY+580);
         gtag('event', 'launch_firework');
     }
 });
+
+var fireworkImg = document.getElementById('frwkImg');
+var fireworkToggle = document.getElementById('frwkToggle');
+fireworkToggle.onclick = function(){
+    switch (fireworksEnabled) {
+        case true:
+            fireworksEnabled = false;
+            fireworkToggle.style.bottom = -2 + '%';
+            fireworkImg.src = "/images/web/frwk-off.png";
+            break;
+        case false:
+            fireworksEnabled = true;
+            fireworkImg.src = "/images/web/frwk-on.png";
+            fireworkToggle.style.bottom = 1 + '%';
+            break;
+    }
+};

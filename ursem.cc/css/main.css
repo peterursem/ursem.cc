@@ -1,0 +1,68 @@
+@font-face {
+        font-family: 'dm_serif';
+        src: url(/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format("truetype");
+        font-display: swap;
+}
+
+@font-face {
+        font-family: 'greycliff';
+        src: url(/fonts/Fontspring-DEMO-greycliffcf-heavy.otf) format("opentype");
+        font-display: swap;
+}
+
+* {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        scroll-snap-type: y mandatory; 
+        overflow-x: hidden;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+*::-webkit-scrollbar {
+        display: none;
+    }
+
+body {
+       background-color: #202020;
+       overflow-x: hidden;
+       width: 100vw;
+}
+
+#sitecover {
+        z-index: 2;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        scroll-snap-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+}
+
+#sitecover h1 {
+        position: absolute;
+        font-family: 'greycliff';
+        font-size: 15vh;
+}
+
+#sitecover #first {
+        left: 5vw;
+}
+
+#sitecover #last {
+        right: 5vw;
+}
+
+@media screen and (max-width: 450px) {
+        #sitecover h1 {
+                font-size: 75px;
+        }
+}
+
+      
+      
