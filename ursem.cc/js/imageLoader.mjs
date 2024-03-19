@@ -82,7 +82,7 @@ function populateGrid(grid, imgs, favs, numFavs) {
                 }
                 console.log(grid.parentNode);
                 //TODO: RANDOM BACKGROUND FROM FAVS
-                grid.parentNode.firstElementChild.style.backgroundImage = "url(/thumbs/" + imgs[0].url + ".webp)";
+                grid.parentNode.firstElementChild.style.backgroundImage = "url(/thumbs/" + imgs[favs[Math.floor(Math.random()*favs.length)]].url + ".webp)";
                 document.getElementById('imgs').appendChild(grid.parentNode);
                 res();
         });
