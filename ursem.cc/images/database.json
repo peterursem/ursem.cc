@@ -3,57 +3,69 @@
         {
             "bg": 0,
             "favs": [
-                0,
+                3,
+                4,
+                5,
+                6,
                 7,
                 8,
                 9,
-                10
+                10,
+                11
             ],
             "imgs": [
                 {
-                    "url": "2022/10/IMG_6234",
+                    "url": "2020-2021/photo10/older-1",
                     "tags": []
                 },
                 {
-                    "url": "2022/10/IMG_6334",
+                    "url": "2020-2021/photo10/older-2",
                     "tags": []
                 },
                 {
-                    "url": "2022/10/IMG_6353",
+                    "url": "2020-2021/photo10/older-3",
                     "tags": []
                 },
                 {
-                    "url": "2022/10/IMG_6376",
+                    "url": "2020-2021/photo10/older-4",
                     "tags": []
                 },
                 {
-                    "url": "2022/10/IMG_6378",
+                    "url": "2020-2021/photo10/older-5",
                     "tags": []
                 },
                 {
-                    "url": "2022/10/IMG_6382",
+                    "url": "2020-2021/photo10/older-6",
                     "tags": []
                 },
                 {
-                    "url": "2022/10/IMG_6393",
+                    "url": "2020-2021/photo10/older-7",
                     "tags": []
                 },
                 {
-                    "url": "2022/10/IMG_6396",
+                    "url": "2020-2021/photo10/older-8",
                     "tags": []
                 },
                 {
-                    "url": "2022/10/IMG_6399",
+                    "url": "2020-2021/photo10/older-9",
                     "tags": []
                 },
                 {
-                    "url": "2022/10/IMG_6404",
+                    "url": "2020-2021/photo10/older-10",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/photo10/older-11",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/photo10/older-12",
                     "tags": []
                 }
             ],
-            "numFavs": 5,
-            "title": "Highway 40",
-            "date": "October 2022"
+            "numFavs": 9,
+            "title": "Photo 10",
+            "date": "May 2019"
         },
         {
             "bg": 0,
@@ -428,323 +440,6 @@
             "favs": [
                 0,
                 2,
-                3,
-                11,
-                13,
-                15,
-                17,
-                18
-            ],
-            "imgs": [
-                {
-                    "url": "2020-2021/inkpots/inkpots-1",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-2",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-3",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-4",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-5",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-6",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-7",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-8",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-9",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-10",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-11",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-12",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-13",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-14",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-15",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-16",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-17",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-18",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/inkpots/inkpots-19",
-                    "tags": []
-                }
-            ],
-            "numFavs": 8,
-            "title": "Johnston Canyon",
-            "date": "Summer 2021"
-        },
-        {
-            "bg": 0,
-            "favs": [
-                5,
-                9,
-                12,
-                13,
-                14
-            ],
-            "imgs": [
-                {
-                    "url": "2020-2021/interject/holly-1",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-2",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-3",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-4",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-5",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-6",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-7",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-8",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-9",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-10",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-11",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-12",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-13",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-14",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/interject/holly-15",
-                    "tags": []
-                }
-            ],
-            "numFavs": 5,
-            "title": "Misc",
-            "date": "Summer 2020"
-        },
-        {
-            "bg": 0,
-            "favs": [
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10,
-                11
-            ],
-            "imgs": [
-                {
-                    "url": "2020-2021/photo10/older-1",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/photo10/older-2",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/photo10/older-3",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/photo10/older-4",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/photo10/older-5",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/photo10/older-6",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/photo10/older-7",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/photo10/older-8",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/photo10/older-9",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/photo10/older-10",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/photo10/older-11",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/photo10/older-12",
-                    "tags": []
-                }
-            ],
-            "numFavs": 9,
-            "title": "Photo 10",
-            "date": "May 2019"
-        },
-        {
-            "bg": 0,
-            "favs": [
-                1,
-                2,
-                4,
-                5,
-                8,
-                11,
-                12
-            ],
-            "imgs": [
-                {
-                    "url": "2020-2021/septlong/septlong-1",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-2",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-3",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-4",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-5",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-6",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-7",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-8",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-9",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-10",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-11",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-12",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-13",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-14",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-15",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/septlong/septlong-16",
-                    "tags": []
-                }
-            ],
-            "numFavs": 7,
-            "title": "Burnt Timber",
-            "date": "Summer 2021"
-        },
-        {
-            "bg": 0,
-            "favs": [
-                0,
-                2,
                 5,
                 6,
                 10,
@@ -853,44 +548,308 @@
         {
             "bg": 0,
             "favs": [
-                5,
-                6,
-                9
+                0,
+                2,
+                3,
+                11,
+                13,
+                15,
+                17,
+                18
             ],
             "imgs": [
                 {
-                    "url": "2022/04/19/2",
+                    "url": "2020-2021/inkpots/inkpots-1",
                     "tags": []
                 },
                 {
-                    "url": "2022/04/19/5",
+                    "url": "2020-2021/inkpots/inkpots-2",
                     "tags": []
                 },
                 {
-                    "url": "2022/04/19/6",
+                    "url": "2020-2021/inkpots/inkpots-3",
                     "tags": []
                 },
                 {
-                    "url": "2022/04/19/8",
+                    "url": "2020-2021/inkpots/inkpots-4",
                     "tags": []
                 },
                 {
-                    "url": "2022/04/19/9",
+                    "url": "2020-2021/inkpots/inkpots-5",
                     "tags": []
                 },
                 {
-                    "url": "2022/04/19/10",
+                    "url": "2020-2021/inkpots/inkpots-6",
                     "tags": []
                 },
                 {
-                    "url": "2022/04/19/11",
+                    "url": "2020-2021/inkpots/inkpots-7",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/inkpots/inkpots-8",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/inkpots/inkpots-9",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/inkpots/inkpots-10",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/inkpots/inkpots-11",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/inkpots/inkpots-12",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/inkpots/inkpots-13",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/inkpots/inkpots-14",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/inkpots/inkpots-15",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/inkpots/inkpots-16",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/inkpots/inkpots-17",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/inkpots/inkpots-18",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/inkpots/inkpots-19",
                     "tags": []
                 }
             ],
-            "numFavs": 3,
-            "title": "Spring Snow",
-            "date": "April 2024"
+            "numFavs": 8,
+            "title": "Johnston Canyon",
+            "date": "Summer 2021"
         },
+        {
+            "bg": 0,
+            "favs": [
+                1,
+                2,
+                4,
+                5,
+                8,
+                11,
+                12
+            ],
+            "imgs": [
+                {
+                    "url": "2020-2021/septlong/septlong-1",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-2",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-3",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-4",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-5",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-6",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-7",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-8",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-9",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-10",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-11",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-12",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-13",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-14",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-15",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/septlong/septlong-16",
+                    "tags": []
+                }
+            ],
+            "numFavs": 7,
+            "title": "Burnt Timber",
+            "date": "September 2021"
+        },
+        {
+            "bg": 0,
+            "favs": [
+                5,
+                9,
+                12,
+                13,
+                14
+            ],
+            "imgs": [
+                {
+                    "url": "2020-2021/interject/holly-1",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-2",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-3",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-4",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-5",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-6",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-7",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-8",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-9",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-10",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-11",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-12",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-13",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-14",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/interject/holly-15",
+                    "tags": []
+                }
+            ],
+            "numFavs": 5,
+            "title": "Misc",
+            "date": "Fall 2021"
+        },
+        {
+            "bg": 0,
+            "favs": [
+                0,
+                7,
+                8,
+                9,
+                10
+            ],
+            "imgs": [
+                {
+                    "url": "2022/10/IMG_6234",
+                    "tags": []
+                },
+                {
+                    "url": "2022/10/IMG_6334",
+                    "tags": []
+                },
+                {
+                    "url": "2022/10/IMG_6353",
+                    "tags": []
+                },
+                {
+                    "url": "2022/10/IMG_6376",
+                    "tags": []
+                },
+                {
+                    "url": "2022/10/IMG_6378",
+                    "tags": []
+                },
+                {
+                    "url": "2022/10/IMG_6382",
+                    "tags": []
+                },
+                {
+                    "url": "2022/10/IMG_6393",
+                    "tags": []
+                },
+                {
+                    "url": "2022/10/IMG_6396",
+                    "tags": []
+                },
+                {
+                    "url": "2022/10/IMG_6399",
+                    "tags": []
+                },
+                {
+                    "url": "2022/10/IMG_6404",
+                    "tags": []
+                }
+            ],
+            "numFavs": 5,
+            "title": "Highway 40",
+            "date": "October 2022"
+        },     
         {
             "bg": 0,
             "favs": [
@@ -949,6 +908,47 @@
             "title": "Winter",
             "date": "January 2022"
         },
+        {
+            "bg": 0,
+            "favs": [
+                1,
+                3,
+                5
+            ],
+            "imgs": [
+                {
+                    "url": "2022/04/19/2",
+                    "tags": []
+                },
+                {
+                    "url": "2022/04/19/5",
+                    "tags": []
+                },
+                {
+                    "url": "2022/04/19/6",
+                    "tags": []
+                },
+                {
+                    "url": "2022/04/19/8",
+                    "tags": []
+                },
+                {
+                    "url": "2022/04/19/9",
+                    "tags": []
+                },
+                {
+                    "url": "2022/04/19/10",
+                    "tags": []
+                },
+                {
+                    "url": "2022/04/19/11",
+                    "tags": []
+                }
+            ],
+            "numFavs": 3,
+            "title": "Spring Snow",
+            "date": "April 2022"
+        }, 
         {
             "bg": 0,
             "favs": [
@@ -1215,36 +1215,6 @@
         {
             "bg": 0,
             "favs": [
-                0,
-                1,
-                2,
-                3
-            ],
-            "imgs": [
-                {
-                    "url": "2023/hwy40/bike-6",
-                    "tags": []
-                },
-                {
-                    "url": "2023/hwy40/bike-7",
-                    "tags": []
-                },
-                {
-                    "url": "2023/hwy40/bike-8",
-                    "tags": []
-                },
-                {
-                    "url": "2023/hwy40/bike-9",
-                    "tags": []
-                }
-            ],
-            "numFavs": 4,
-            "title": "Highway 40",
-            "date": "August 2023"
-        },
-        {
-            "bg": 0,
-            "favs": [
                 1,
                 3,
                 4
@@ -1274,6 +1244,36 @@
             "numFavs": 3,
             "title": "New Bike",
             "date": "July 2023"
+        },
+        {
+            "bg": 0,
+            "favs": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "imgs": [
+                {
+                    "url": "2023/hwy40/bike-6",
+                    "tags": []
+                },
+                {
+                    "url": "2023/hwy40/bike-7",
+                    "tags": []
+                },
+                {
+                    "url": "2023/hwy40/bike-8",
+                    "tags": []
+                },
+                {
+                    "url": "2023/hwy40/bike-9",
+                    "tags": []
+                }
+            ],
+            "numFavs": 4,
+            "title": "Highway 40",
+            "date": "August 2023"
         },
         {
             "bg": 0,
