@@ -1,4 +1,4 @@
-//######## Cover Image ########//
+/* 2020-2024 Peter Ursem */
 
 function setCover() {
         const coverUrls = [

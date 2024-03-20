@@ -1,3 +1,5 @@
+/* 2020-2024 Peter Ursem */
+
 export function setModals(imgs) {
         var modal = document.getElementById("imgModal");
         var modalImg = document.getElementById("modalImg");

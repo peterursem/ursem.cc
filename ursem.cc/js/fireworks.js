@@ -1,4 +1,4 @@
-/* Copyright 2023 Peter Ursem, All Rights Reserved */
+/* 2020-2024 Peter Ursem */
 
 const fireworkRocketInitVelocity = 1.5;
 const fireworkRocketFlyTime = 500;

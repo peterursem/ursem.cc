@@ -1,3 +1,5 @@
+/* 2020-2024 Peter Ursem */
+
 export function loadData() {
         return new Promise((res, rej) => {
                 fetch('images/database.json')

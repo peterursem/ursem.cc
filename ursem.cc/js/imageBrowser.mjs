@@ -1,3 +1,5 @@
+/* 2020-2024 Peter Ursem */
+
 import { loadData } from "./imageLoader.mjs";
 import { setModals } from "./modal.mjs";
 
