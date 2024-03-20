@@ -34,7 +34,6 @@ function initMasonry() {
 
 function resizeCollection(grid) {
         const collection = grid.parentNode;
-        console.log(grid.parentNode.id, window.innerHeight, grid.style.height, (parseFloat(grid.style.height) / parseFloat(window.innerHeight) * 100) + 25);
         collection.style.height = (parseFloat(grid.style.height) / parseFloat(window.innerHeight) * 100) + 25 + 'vh';
         grid.style.marginTop = -100 * (parseFloat(grid.style.height) / parseFloat(window.innerHeight)) - 10 + 'vh';
 }
