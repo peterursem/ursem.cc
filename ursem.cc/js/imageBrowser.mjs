@@ -3,7 +3,10 @@ import { setModals } from "./modal.mjs";
 
 //Find every .grid element
 loadData()
-.then(() => initMasonry());
+.then(() => {
+        initMasonry();
+        //document.dispatchEvent(new Event('needsLayout'));
+});
 
 function initMasonry() {
         document.querySelectorAll('.grid').forEach((grid) => {
@@ -18,16 +21,20 @@ function initMasonry() {
         
                 //Expand the background once the grid is computed.
                 msnry.on('layoutComplete', function () {
-                        console.log(grid.parentNode);
-                        const collection = grid.parentNode;
-                        collection.style.height = (parseFloat(grid.style.height) / parseFloat(window.innerHeight) * 100) + 25 + 'vh';
-                        grid.style.marginTop = -100 * (parseFloat(grid.style.height) / parseFloat(window.innerHeight)) - 10 + 'vh';
+                        resizeCollection(grid);
                 });
-        
-                //Recompute the layout and set modals once images have loaded
+
                 imagesLoaded(grid, () => {
                         msnry.layout();
+                        resizeCollection(grid);
                         setModals(document.querySelectorAll('.grid img'));
                 });
         });
+}
+
+function resizeCollection(grid) {
+        const collection = grid.parentNode;
+        console.log(grid.parentNode.id, window.innerHeight, grid.style.height, (parseFloat(grid.style.height) / parseFloat(window.innerHeight) * 100) + 25);
+        collection.style.height = (parseFloat(grid.style.height) / parseFloat(window.innerHeight) * 100) + 25 + 'vh';
+        grid.style.marginTop = -100 * (parseFloat(grid.style.height) / parseFloat(window.innerHeight)) - 10 + 'vh';
 }

@@ -17,7 +17,7 @@ function fillPage(data) {
                         setupCollection(collection.title, collection.date)
                                 .then((grid) => {
                                         populateGrid(grid, collection.imgs, collection.favs, collection.numFavs)
-                                                .then(res());
+                                                .then(() => res());
                                 });
 
                 });
@@ -68,8 +68,6 @@ function populateGrid(grid, imgs, favs, numFavs) {
                         let possibleFavs = favs;
                         for (let i = 0; i < numFavs; i++) {
                                 let index = Math.floor(Math.random() * possibleFavs.length);
-                                console.log(possibleFavs, imgs)
-                                console.log(i, index, possibleFavs[index], imgs[possibleFavs[index]]);
                                 grid.appendChild(createGridItem(imgs[possibleFavs[index]].url));
                                 possibleFavs.splice(index, 1);
                         }
@@ -77,11 +75,8 @@ function populateGrid(grid, imgs, favs, numFavs) {
                 else {
                         favs.forEach(fav => {
                                 grid.appendChild(createGridItem(imgs[fav].url));
-
                         });
                 }
-                console.log(grid.parentNode);
-                //TODO: RANDOM BACKGROUND FROM FAVS
                 grid.parentNode.firstElementChild.style.backgroundImage = "url(/thumbs/" + imgs[favs[Math.floor(Math.random()*favs.length)]].url + ".webp)";
                 document.getElementById('imgs').appendChild(grid.parentNode);
                 res();

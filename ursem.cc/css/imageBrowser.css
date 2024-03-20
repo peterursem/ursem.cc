@@ -18,7 +18,13 @@
         
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
+        .titleText>h1 {
+                font-size: 4.5vh !important;
+        }
+        .titleText>h2 {
+                font-size: 2vh !important;
+        }
         .grid-sizer,
         .grid-item{
                 --imageCount: 1;

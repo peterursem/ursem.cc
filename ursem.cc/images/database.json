@@ -82,53 +82,6 @@
             ],
             "imgs": [
                 {
-                    "url": "2020-2021/biking_downtown/bike-1",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/biking_downtown/bike-2",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/biking_downtown/bike-3",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/biking_downtown/bike-4",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/biking_downtown/bike-5",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/biking_downtown/bike-6",
-                    "tags": []
-                },
-                {
-                    "url": "2020-2021/biking_downtown/bike-7",
-                    "tags": []
-                }
-            ],
-            "numFavs": 9,
-            "title": "Biking Downtown",
-            "date": "Summer 2020"
-        },
-        {
-            "bg": 0,
-            "favs": [
-                15,
-                16,
-                17,
-                18,
-                19,
-                21,
-                22,
-                24,
-                32
-            ],
-            "imgs": [
-                {
                     "url": "2020-2021/disposable/Disposable-1",
                     "tags": []
                 },
@@ -263,6 +216,49 @@
             ],
             "numFavs": 9,
             "title": "Disposable Cameras",
+            "date": "Summer 2020"
+        },
+        {
+            "bg": 0,
+            "favs": [
+                0,
+                2,
+                4,
+                5,
+                6
+            ],
+            "imgs": [
+                {
+                    "url": "2020-2021/biking_downtown/bike-1",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/biking_downtown/bike-2",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/biking_downtown/bike-3",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/biking_downtown/bike-4",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/biking_downtown/bike-5",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/biking_downtown/bike-6",
+                    "tags": []
+                },
+                {
+                    "url": "2020-2021/biking_downtown/bike-7",
+                    "tags": []
+                }
+            ],
+            "numFavs": 9,
+            "title": "Biking Downtown",
             "date": "Summer 2020"
         },
         {
@@ -798,11 +794,14 @@
         {
             "bg": 0,
             "favs": [
-                0,
+                2,
+                3,
+                4,
+                5,
+                6,
                 7,
                 8,
-                9,
-                10
+                9
             ],
             "imgs": [
                 {
@@ -847,9 +846,9 @@
                 }
             ],
             "numFavs": 5,
-            "title": "Highway 40",
+            "title": "Bighorn Trail",
             "date": "October 2022"
-        },     
+        },
         {
             "bg": 0,
             "favs": [
@@ -948,7 +947,7 @@
             "numFavs": 3,
             "title": "Spring Snow",
             "date": "April 2022"
-        }, 
+        },
         {
             "bg": 0,
             "favs": [
@@ -1272,7 +1271,7 @@
                 }
             ],
             "numFavs": 4,
-            "title": "Highway 40",
+            "title": "Kananaskis Trail",
             "date": "August 2023"
         },
         {
