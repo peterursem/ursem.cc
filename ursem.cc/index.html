@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <!--Copyright 2020 - 2022 Peter Ursem, All Rights Reserved-->
 <html lang="en">
-    <head>
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
-        <link rel="manifest" href="favi/site.webmanifest">
-        <link rel="shortcut icon" href="favi/favicon.ico">
-        <meta name="msapplication-TileColor" content="#00aba9">
-        <meta name="msapplication-config" content="favi/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-        
-        <!-- Metadata -->
-        <title>Peter Ursem's Personal Website</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Peter Ursem">
-        <meta name="description" content="My website. Here I post photos and projects I've made.">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-        <link rel="stylesheet" href="css/site.css">
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W65J318WSL"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+<head>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+    <link rel="manifest" href="favi/site.webmanifest">
+    <link rel="shortcut icon" href="favi/favicon.ico">
+    <meta name="theme-color" content="#ffffff">
 
-            gtag('config', 'G-W65J318WSL');
-        </script>
+    <!-- Metadata -->
+    <title>Peter Ursem's Site</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Peter Ursem">
+    <meta name="description"
+        content="This is a very cool and pretty website where I dump photos and projects I create.">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fireworks.css">
+    <link rel="stylesheet" href="css/imageBrowser.css">
+    <link rel="stylesheet" href="css/imageModal.css">
 
-    </head>
-    <body id="body">
-        <div id="theSky"></div>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W65J318WSL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        <div id="sitecover">
-            <ul id="navbar">
-                <li class="navitem"><a href="/"><img class="logo" src="images/web/logo.svg"></a><a class="topText" id="slogan"></a></li>
-                <li class="navitem"><a class="topText">Enable Fireworks? </a><input type="checkbox" id="fireworksEnabled"></li>
-            </ul>
-            <img id="scrollArrow" src="images/web/scrollarrow.svg">
-        </div>
+        gtag('config', 'G-W65J318WSL');
+    </script>
+</head>
 
-        <div id="tagBar"></div>
-        <section id="message"></section>
-        <ul id="imgs"></ul>
+<body id="body">
+    <div id="theSky"></div>
 
-        <div id="imgModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="modalImg">
-        </div>
-    </body>
-    <script src="js/photos.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/firework.js"></script>
-    <link rel="stylesheet" href="css/images.css">
+    <div id="sitecover">
+        <button id="frwkToggle"><img id="frwkImg" src="images/web/frwk-off.png"></button>
+        <h1 id="first">Peter</h1>
+        <h1 id="last">Ursem</h1>
+    </div>
+
+    <div id="imgs">
+
+    </div>
+
+    <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+</body>
+
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/imageBrowser.mjs" type="module"></script>
+<script src="js/fireworks.js"></script>
+
 </html>
