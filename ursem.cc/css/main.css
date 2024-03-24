@@ -41,7 +41,7 @@ body {
         scroll-snap-align: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom center;
+        background-position: center center;
 }
 
 #sitecover h1 {

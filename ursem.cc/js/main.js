@@ -25,10 +25,11 @@ function setCover() {
         coverDiv.appendChild(first);
         coverDiv.appendChild(last);
     }
+
+    let themeColors = ['#6cb8c5','#84c09e','#ecdb64','#de6e5a'];
     
     function getThemeColor() {
-        const themeColors = ['#6cb8c5','#84c09e','#ecdb64','#de6e5a'];
-        return themeColors[Math.floor(Math.random() * themeColors.length)];
+        return themeColors.splice(Math.floor(Math.random() * themeColors.length),1)[0];
     }
     
     function getRandHeight() {
