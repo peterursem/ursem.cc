@@ -316,11 +316,11 @@
                 },
                 {
                     "url": "2020-2021/farm/farm-12",
-                    "tags": []
+                    "tags": ["hide"]
                 },
                 {
                     "url": "2020-2021/farm/farm-13",
-                    "tags": []
+                    "tags": ["hide"]
                 },
                 {
                     "url": "2020-2021/farm/farm-14",
@@ -806,7 +806,7 @@
             "imgs": [
                 {
                     "url": "2022/10/IMG_6234",
-                    "tags": []
+                    "tags": ["hide"]
                 },
                 {
                     "url": "2022/10/IMG_6334",
@@ -884,23 +884,23 @@
                 },
                 {
                     "url": "2022/Q1/q1-7",
-                    "tags": []
+                    "tags": ["hide"]
                 },
                 {
                     "url": "2022/Q1/q1-8",
-                    "tags": []
+                    "tags": ["hide"]
                 },
                 {
                     "url": "2022/Q1/q1-9",
-                    "tags": []
+                    "tags": ["hide"]
                 },
                 {
                     "url": "2022/Q1/q1-10",
-                    "tags": []
+                    "tags": ["hide"]
                 },
                 {
                     "url": "2022/Q1/q1-11",
-                    "tags": []
+                    "tags": ["hide"]
                 }
             ],
             "numFavs": 4,

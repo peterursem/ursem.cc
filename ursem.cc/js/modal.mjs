@@ -1,8 +1,8 @@
 /* 2020-2024 Peter Ursem */
 
 export function setModals(imgs) {
-        var modal = document.getElementById("imgModal");
-        var modalImg = document.getElementById("modalImg");
+        var modal = document.getElementById("img-modal");
+        var modalImg = document.getElementById("modal-img");
 
         for (var img of imgs) {
                 var orientation = ""

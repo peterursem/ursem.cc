@@ -17,13 +17,12 @@ function setCover() {
         coverDiv.style.backgroundImage = 'url('+coverUrls[coverIndex]+')';
     
         let first = document.getElementById("first");
-        let last = document.getElementById("last");
         first.style.color = getThemeColor();
         first.style.top = getRandHeight();
+
+        let last = document.getElementById("last");
         last.style.color = getThemeColor();
         last.style.bottom = getRandHeight();
-        coverDiv.appendChild(first);
-        coverDiv.appendChild(last);
     }
 
     let themeColors = ['#6cb8c5','#84c09e','#ecdb64','#de6e5a'];

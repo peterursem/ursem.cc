@@ -1,28 +1,16 @@
-@font-face {
-        font-family: 'dm_serif';
-        src: url(/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format("truetype");
-        font-display: swap;
-}
-
-@font-face {
-        font-family: 'greycliff';
-        src: url(/fonts/Fontspring-DEMO-greycliffcf-heavy.otf) format("opentype");
-        font-display: swap;
-}
-
 @media screen and (max-width: 800px) {
         .grid-sizer,
         .grid-item{
-                --imageCount: 3;
+                --imageCount: 2;
         }
         
 }
 
 @media screen and (max-width: 450px) {
-        .titleText>h1 {
+        .title-text>h1 {
                 font-size: 4.5vh !important;
         }
-        .titleText>h2 {
+        .title-text>h2 {
                 font-size: 2vh !important;
         }
         .grid-sizer,
@@ -36,7 +24,7 @@
         --gutter: 1%;
 }
 
-.titleText {
+.title-text {
         position: absolute;
         top: 3vh;
         left: 3.5vw;
@@ -45,13 +33,29 @@
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
-.titleText>h1 {
+.title-text>h1 {
         font-size: 6vh;
 }
 
-.titleText>h2 {
+.title-text>h2 {
         margin-top: -2vh;
         font-size: 2.5vh;
+}
+
+.bottom {
+        display: flex;
+        margin-top: -100px;
+        width: 98vw;
+        justify-content: end;
+}
+
+.bottom>button {
+        background-color: transparent;
+        border: 0;
+        color: #6cb8c5;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: large;
 }
 
 .collection {
