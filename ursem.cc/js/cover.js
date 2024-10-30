@@ -3,13 +3,19 @@
 function setCover() {
         const coverUrls = [
             '/images/web/cover.gif',
-            '/images/web/cover0.jpg',
+            '/images/2023/hualtuco/hualtuco-28.jpg',
             '/images/web/cover1.jpg',
             '/images/web/cover2.jpg',
             '/images/web/cover3.jpg',
-            '/images/web/cover4.jpg',
-            //'/images/web/cover5.jpg', *ONLY WORKS ON DESKTOP*
-            '/images/web/cover6.jpg'
+            '/images/2024/Astronomy/07.jpg',
+            '/images/2023/nl/nl-127.jpg',
+            '/images/2024/Nederland/20.jpg',
+            '/images/2024/Nederland/12.jpg',
+            '/images/2024/Nederland/25.jpg',
+            '/images/2024/Montana-Idaho/60.jpg',
+            '/images/2024/Montana-Idaho/37.jpg',
+            '/images/2024/Montana-Idaho/52.jpg',
+            '/images/2023/nl/nl-006.jpg'
         ]
 
         let coverDiv = document.getElementById('sitecover');

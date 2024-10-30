@@ -6,7 +6,7 @@
 
 @font-face {
         font-family: 'greycliff';
-        src: url(/fonts/Fontspring-DEMO-greycliffcf-heavy.otf) format("opentype");
+        src: url(/fonts/Greycliff-CF-Heavy.otf) format("opentype");
         font-display: swap;
 }
 
@@ -48,6 +48,7 @@ body {
         position: absolute;
         font-family: 'greycliff';
         font-size: 15vh;
+        text-shadow: 2px 2px 8px #00000099;
 }
 
 #sitecover #first {

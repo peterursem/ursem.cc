@@ -316,11 +316,15 @@
                 },
                 {
                     "url": "2020-2021/farm/farm-12",
-                    "tags": ["hide"]
+                    "tags": [
+                        "hide"
+                    ]
                 },
                 {
                     "url": "2020-2021/farm/farm-13",
-                    "tags": ["hide"]
+                    "tags": [
+                        "hide"
+                    ]
                 },
                 {
                     "url": "2020-2021/farm/farm-14",
@@ -806,7 +810,9 @@
             "imgs": [
                 {
                     "url": "2022/10/IMG_6234",
-                    "tags": ["hide"]
+                    "tags": [
+                        "hide"
+                    ]
                 },
                 {
                     "url": "2022/10/IMG_6334",
@@ -884,23 +890,33 @@
                 },
                 {
                     "url": "2022/Q1/q1-7",
-                    "tags": ["hide"]
+                    "tags": [
+                        "hide"
+                    ]
                 },
                 {
                     "url": "2022/Q1/q1-8",
-                    "tags": ["hide"]
+                    "tags": [
+                        "hide"
+                    ]
                 },
                 {
                     "url": "2022/Q1/q1-9",
-                    "tags": ["hide"]
+                    "tags": [
+                        "hide"
+                    ]
                 },
                 {
                     "url": "2022/Q1/q1-10",
-                    "tags": ["hide"]
+                    "tags": [
+                        "hide"
+                    ]
                 },
                 {
                     "url": "2022/Q1/q1-11",
-                    "tags": ["hide"]
+                    "tags": [
+                        "hide"
+                    ]
                 }
             ],
             "numFavs": 4,
@@ -1874,6 +1890,694 @@
             "numFavs": 10,
             "title": "Nederland",
             "date": "August 2023"
+        },
+        {
+            "title": "Montana & Idaho",
+            "date": "July 2024",
+            "numFavs": 15,
+            "favs": [
+                2,
+                4,
+                5,
+                7,
+                9,
+                10,
+                11,
+                12,
+                14,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                37,
+                38,
+                39,
+                40,
+                42,
+                43,
+                44,
+                45,
+                48,
+                49,
+                52,
+                54,
+                55,
+                57,
+                59,
+                60
+            ],
+            "imgs": [
+                {
+                    "url": "2024/Montana-Idaho/00",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/01",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/02",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/03",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/04",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/05",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/06",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/07",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/08",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/09",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/10",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/11",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/12",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/13",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/14",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/15",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/16",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/17",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/18",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/19",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/20",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/21",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/22",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/23",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/24",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/25",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/26",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/27",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/28",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/29",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/30",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/31",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/32",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/33",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/34",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/35",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/36",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/37",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/38",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/39",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/40",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/41",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/42",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/43",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/44",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/45",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/46",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/47",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/48",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/49",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/50",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/51",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/52",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/53",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/54",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/55",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/56",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/57",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/58",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/59",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Montana-Idaho/60",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "title": "Nederland",
+            "date": "August 2024",
+            "numFavs": 10,
+            "favs": [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                8,
+                10,
+                11,
+                12,
+                13,
+                14,
+                19,
+                20,
+                21,
+                24,
+                25,
+                26,
+                27,
+                28,
+                30
+            ],
+            "imgs": [
+                {
+                    "url": "2024/Nederland/00",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/01",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/02",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/03",
+                    "tags": [
+                        "hide"
+                    ]
+                },
+                {
+                    "url": "2024/Nederland/04",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/05",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/06",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/07",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/08",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/09",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/10",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/11",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/12",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/13",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/14",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/15",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/16",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/17",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/18",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/19",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/20",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/21",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/22",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/23",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/24",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/25",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/26",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/27",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/28",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/29",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Nederland/30",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "title": "Fall Astronomy",
+            "date": "October 2024",
+            "numFavs": 10,
+            "favs": [
+                4,
+                5,
+                6,
+                8,
+                9,
+                7,
+                0,
+                1,
+                2,
+                3,
+                10
+            ],
+            "imgs": [
+                {
+                    "url": "2024/Astronomy/00",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Astronomy/01",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Astronomy/02",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Astronomy/03",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Astronomy/04",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Astronomy/05",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Astronomy/06",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Astronomy/07",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Astronomy/08",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Astronomy/09",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Astronomy/10",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "title": "Motorcycle Photos",
+            "date": "2024",
+            "numFavs": 10,
+            "favs": [
+                0,
+                1,
+                2,
+                6,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                16,
+                19,
+                23,
+                24,
+                25,
+                26,
+                27,
+                29,
+                30,
+                32
+            ],
+            "imgs": [
+                {
+                    "url": "2024/Motorcycle/00",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/01",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/02",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/03",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/04",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/05",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/06",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/07",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/08",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/09",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/10",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/11",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/12",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/13",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/14",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/15",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/16",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/17",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/18",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/19",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/20",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/21",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/22",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/23",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/24",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/25",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/26",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/27",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/28",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/29",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/30",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/31",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/32",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/33",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/34",
+                    "tags": []
+                },
+                {
+                    "url": "2024/Motorcycle/35",
+                    "tags": []
+                }
+            ]
         }
     ]
 }
