@@ -5,13 +5,19 @@
     <meta charset="UTF-8" />
     <title>Super Awesome Quiz Logo Generator</title>
     <style>
+
+        :root{
+            --bg1: #a0a0a0;
+            --bg2: #bdbdbd;
+        }
+
         .container {
             height: 100%;
             width: 100%;
-            background: conic-gradient(#bdbdbd 90deg,
-                    #a0a0a0 90deg 180deg,
-                    #bdbdbd 180deg 270deg,
-                    #a0a0a0 270deg);
+            background: conic-gradient(var(--bg2) 90deg,
+                    var(--bg1) 90deg 180deg,
+                    var(--bg2) 180deg 270deg,
+                    var(--bg1) 270deg);
             background-repeat: repeat;
             background-size: 60px 60px;
             background-position: top left;
@@ -192,9 +198,13 @@
         </div>
         <div style="display: flex;flex-direction: column;align-content: center;">
             <label for="text">Text</label>
-            <input type="color" id="text" value="#000">
+            <input type="color" id="text" value="#000000">
         </div>
         <input type="range" id="textbarlight" min="-1" max="1" value="0.2" step="0.01">
+        <div>
+            <label for="bg">Background</label>
+            <input type="color" id="bg" value="#a0a0a0">
+        </div>
 
         <button id="saveSvg">Save</button>
     </div>
@@ -245,7 +255,12 @@
 
         document.getElementById("textbarlight").addEventListener("input", function () {
             updateColor("textbar", ColorLuminance(document.getElementById("text").value, this.value));
-        })
+        });
+
+        document.getElementById("bg").addEventListener("input", function () {
+            document.querySelector(":root").style.setProperty("--bg1", this.value);
+            document.querySelector(":root").style.setProperty("--bg2", ColorLuminance(this.value, 0.4));
+        });
 
         function saveSvg() {
             let svg = document.querySelector("svg");
