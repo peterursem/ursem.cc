@@ -170,20 +170,30 @@
         </svg>
     </div>
     <div style="display: flex;width: 100%;justify-content: space-around;margin: 20px;">
-        <label for="trees">Trees</label>
-        <input type="color" id="trees" value="#030303">
-
-        <label for="snow">Snow</label>
-        <input type="color" id="snow" value="#fdfdfd">
-
-        <label for="mount">Mountain</label>
-        <input type="color" id="mount" value="#404548">
-
-        <label for="horse">Horse</label>
-        <input type="color" id="horse" value="#a5141f">
-
-        <label for="text">Text</label>
-        <input type="color" id="text" value="#000">
+        <div style="display: flex;flex-direction: column;align-content: center;">
+            <label for="trees">Trees</label>
+            <input type="color" id="trees" value="#030303">
+            <input type="range" id="treelight" min="-1" max="1" value="0" step="0.01">
+        </div>
+        <div style="display: flex;flex-direction: column;align-content: center;">
+            <label for="snow">Snow</label>
+            <input type="color" id="snow" value="#fdfdfd">
+            <input type="range" id="snowlight" min="-1" max="1" value="0" step="0.01">
+        </div>
+        <div style="display: flex;flex-direction: column;align-content: center;">
+            <label for="mount">Mountain</label>
+            <input type="color" id="mount" value="#404548">
+            <input type="range" id="mountlight" min="-1" max="1" value="0" step="0.01">
+        </div>
+        <div style="display: flex;flex-direction: column;align-content: center;">
+            <label for="horse">Horse</label>
+            <input type="color" id="horse" value="#a5141f">
+            <input type="range" id="horselight" min="-1" max="1" value="0" step="0.01">
+        </div>
+        <div style="display: flex;flex-direction: column;align-content: center;">
+            <label for="text">Text</label>
+            <input type="color" id="text" value="#000">
+        </div>
         <input type="range" id="textbarlight" min="-1" max="1" value="0.2" step="0.01">
 
         <button id="saveSvg">Save</button>
@@ -197,19 +207,35 @@
         }
 
         document.getElementById("trees").addEventListener("input", function () {
-            updateColor("trees", this.value);
+            updateColor("trees", ColorLuminance(this.value,document.getElementById("treelight").value));
+        });
+
+        document.getElementById("treelight").addEventListener("input", function () {
+            updateColor("trees", ColorLuminance(document.getElementById("trees").value,this.value));
         });
 
         document.getElementById("snow").addEventListener("input", function () {
-            updateColor("snow", this.value);
+            updateColor("snow", ColorLuminance(this.value,document.getElementById("snowlight").value));
+        });
+
+        document.getElementById("snowlight").addEventListener("input", function () {
+            updateColor("snow", ColorLuminance(document.getElementById("snow").value,this.value));
         });
 
         document.getElementById("mount").addEventListener("input", function () {
-            updateColor("mtn", this.value);
+            updateColor("mtn", ColorLuminance(this.value,document.getElementById("mountlight").value));
+        });
+
+        document.getElementById("mountlight").addEventListener("input", function () {
+            updateColor("mtn", ColorLuminance(document.getElementById("mount").value,this.value));
         });
 
         document.getElementById("horse").addEventListener("input", function () {
-            updateColor("horse", this.value);
+            updateColor("horse", ColorLuminance(this.value,document.getElementById("horselight").value));
+        });
+
+        document.getElementById("horselight").addEventListener("input", function () {
+            updateColor("horse", ColorLuminance(document.getElementById("horse").value,this.value));
         });
 
         document.getElementById("text").addEventListener("input", function () {
