@@ -5,6 +5,21 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
+  },
+  "emulators": {
+      "hosting": {
+      "host": "127.0.0.1"
+    },"hub": {
+      "host": "127.0.0.1"
+    },"logging": {
+      "host": "127.0.0.1"
+    }
   }
 }
